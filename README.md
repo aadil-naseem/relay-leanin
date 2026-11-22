@@ -9,7 +9,7 @@ work — flagging the ones standing in the same water.
 
 Built for the **Vihaan X** hackathon, Open Innovation track.
 
-> **Live demo:** <https://project-relay-nu.vercel.app>
+
 > **API docs:** <https://relay-api-l6df.onrender.com/docs> · **Health:** <https://relay-api-l6df.onrender.com/api/v1/health>
 >
 > Both run on free tiers, so the first request after a quiet period can take ~30 s
