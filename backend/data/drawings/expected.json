@@ -1,0 +1,115 @@
+{
+  "pump_shaft": {
+    "pdf": "pump_shaft.pdf",
+    "png": "pump_shaft.png",
+    "part_name": "Pump Shaft",
+    "customer": "ACME Pumps (SAMPLE)",
+    "drawing_no": "DWG-PSH-014",
+    "revision": "B",
+    "quantity": 200,
+    "material": "EN8",
+    "surface_finish_ra_um": 1.6,
+    "general_tolerance_standard": "ISO 2768-m",
+    "tightest_tolerance_mm": 0.02,
+    "envelope_mm": 250.0,
+    "process_hints": [
+      "TURN",
+      "MILL"
+    ],
+    "dimensions": [
+      {
+        "label": "SHAFT DIAMETER",
+        "nominal_mm": 20.0,
+        "tol_plus_mm": 0.02,
+        "tol_minus_mm": 0.0,
+        "critical": true
+      },
+      {
+        "label": "LENGTH",
+        "nominal_mm": 250.0,
+        "tol_plus_mm": 0.1,
+        "tol_minus_mm": 0.1,
+        "critical": false
+      }
+    ],
+    "hardness_hrc": null
+  },
+  "piston_rod": {
+    "pdf": "piston_rod.pdf",
+    "png": "piston_rod.png",
+    "part_name": "Hydraulic Piston Rod",
+    "customer": "ACME Hydraulics (SAMPLE)",
+    "drawing_no": "DWG-HPR-001",
+    "revision": "A",
+    "quantity": 50,
+    "material": "EN24",
+    "surface_finish_ra_um": 0.4,
+    "general_tolerance_standard": null,
+    "tightest_tolerance_mm": 0.005,
+    "envelope_mm": 300.0,
+    "process_hints": [
+      "TURN",
+      "GRIND_CYL",
+      "HEAT_TREAT",
+      "SURFACE_TREAT"
+    ],
+    "dimensions": [
+      {
+        "label": "ROD DIAMETER",
+        "nominal_mm": 20.0,
+        "tol_plus_mm": 0.005,
+        "tol_minus_mm": 0.005,
+        "critical": true
+      },
+      {
+        "label": "OVERALL LENGTH",
+        "nominal_mm": 300.0,
+        "tol_plus_mm": 0.2,
+        "tol_minus_mm": 0.2,
+        "critical": false
+      }
+    ],
+    "hardness_hrc": "58-62"
+  },
+  "valve_flange": {
+    "pdf": "valve_flange.pdf",
+    "png": "valve_flange.png",
+    "part_name": "Valve Body Flange",
+    "customer": "Delta Valves (SAMPLE)",
+    "drawing_no": "DWG-VBF-207",
+    "revision": "C",
+    "quantity": 40,
+    "material": "SS304",
+    "surface_finish_ra_um": 3.2,
+    "general_tolerance_standard": "ISO 2768-m",
+    "tightest_tolerance_mm": 0.05,
+    "envelope_mm": 120.0,
+    "process_hints": [
+      "MILL",
+      "DRILL_TAP"
+    ],
+    "dimensions": [
+      {
+        "label": "FLANGE OD",
+        "nominal_mm": 120.0,
+        "tol_plus_mm": 0.05,
+        "tol_minus_mm": 0.05,
+        "critical": true
+      },
+      {
+        "label": "THICKNESS",
+        "nominal_mm": 15.0,
+        "tol_plus_mm": 0.1,
+        "tol_minus_mm": 0.1,
+        "critical": false
+      }
+    ],
+    "hardness_hrc": null
+  },
+  "piston_rod_messy": {
+    "png": "piston_rod_messy.png",
+    "derived_from": "piston_rod",
+    "degraded": true,
+    "note": "rotated 90 deg, contrast reduced to 0.45 - exercises the no-text-layer fallback"
+  }
+}

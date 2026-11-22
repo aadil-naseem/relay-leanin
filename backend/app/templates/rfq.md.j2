@@ -1,0 +1,31 @@
+RECOVERY RFQ - {{ rfq_ref }}
+===========================
+Redacted enquiry: customer-identifying details removed (see redaction report).
+A match is a candidate, not an approved backup.
+
+Job
+---
+- Quantity: {{ quantity if quantity is not none else "not stated" }}
+- Deadline: {% if deadline_days is not none %}{{ deadline_days }} days from now{% else %}not stated{% endif %}
+- Envelope: {{ envelope if envelope is not none else "not stated" }} mm
+
+Material
+--------
+{{ material }}
+
+Process route
+-------------
+{% for step in route %}- {{ step.process if step is mapping else step }}
+{% endfor %}{% if tightest %}Tightest tolerance: {{ tightest }} mm
+{% endif %}{% if standard %}General tolerances: {{ standard }}
+{% endif %}{% if finish %}Surface finish: Ra {{ finish }} um
+{% endif %}{% if heat %}Heat treatment: {{ heat }}
+{% endif %}{% if coating %}Coating: {{ coating }}
+{% endif %}
+Inspection requirements
+-----------------------
+{% for item in inspections %}- {{ item }}
+{% else %}- as per enquiry
+{% endfor %}
+All quantities and cycle times in this enquiry are estimates; production
+details are agreed after technical and commercial review.

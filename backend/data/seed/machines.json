@@ -1,0 +1,44 @@
+{
+  "_note": "Blueprint section 9 owner shop: 3 lathes, 2 VMCs, 1 drill/tap, 1 cylindrical grinder +-0.005 mm (the SPOF - two lathes are never an SPOF, one grinder is). Partner fleets match the story roles.",
+  "machines": [
+    {"id": "mch_own_turn_1", "factory_id": "fac_owner", "process": "TURN", "name": "Lathe 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 400.0},
+    {"id": "mch_own_turn_2", "factory_id": "fac_owner", "process": "TURN", "name": "Lathe 2", "achievable_tolerance_mm": 0.02, "envelope_mm": 400.0},
+    {"id": "mch_own_turn_3", "factory_id": "fac_owner", "process": "TURN", "name": "Lathe 3", "achievable_tolerance_mm": 0.025, "envelope_mm": 350.0},
+    {"id": "mch_own_mill_1", "factory_id": "fac_owner", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 500.0},
+    {"id": "mch_own_mill_2", "factory_id": "fac_owner", "process": "MILL", "name": "VMC 2", "achievable_tolerance_mm": 0.02, "envelope_mm": 500.0},
+    {"id": "mch_own_drill_1", "factory_id": "fac_owner", "process": "DRILL_TAP", "name": "Drill/Tap centre 1", "achievable_tolerance_mm": 0.05, "envelope_mm": 300.0},
+    {"id": "mch_own_grind_1", "factory_id": "fac_owner", "process": "GRIND_CYL", "name": "Cylindrical grinder 1", "achievable_tolerance_mm": 0.005, "envelope_mm": 250.0},
+
+    {"id": "mch_ambnb_turn_1", "factory_id": "fac_amb_nb", "process": "TURN", "name": "CNC lathe 1", "achievable_tolerance_mm": 0.015, "envelope_mm": 450.0},
+    {"id": "mch_ambnb_turn_2", "factory_id": "fac_amb_nb", "process": "TURN", "name": "CNC lathe 2", "achievable_tolerance_mm": 0.015, "envelope_mm": 450.0},
+    {"id": "mch_ambnb_mill_1", "factory_id": "fac_amb_nb", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.015, "envelope_mm": 600.0},
+    {"id": "mch_ambnb_mill_2", "factory_id": "fac_amb_nb", "process": "MILL", "name": "VMC 2", "achievable_tolerance_mm": 0.015, "envelope_mm": 600.0},
+    {"id": "mch_ambnb_grind_1", "factory_id": "fac_amb_nb", "process": "GRIND_CYL", "name": "Cylindrical grinder 1", "achievable_tolerance_mm": 0.005, "envelope_mm": 300.0},
+
+    {"id": "mch_gui_turn_1", "factory_id": "fac_guindy", "process": "TURN", "name": "CNC lathe 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 400.0},
+    {"id": "mch_gui_turn_2", "factory_id": "fac_guindy", "process": "TURN", "name": "CNC lathe 2", "achievable_tolerance_mm": 0.02, "envelope_mm": 400.0},
+    {"id": "mch_gui_mill_1", "factory_id": "fac_guindy", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 500.0},
+    {"id": "mch_gui_mill_2", "factory_id": "fac_guindy", "process": "MILL", "name": "VMC 2", "achievable_tolerance_mm": 0.02, "envelope_mm": 500.0},
+
+    {"id": "mch_ora_turn_1", "factory_id": "fac_oragadam", "process": "TURN", "name": "CNC lathe 1", "achievable_tolerance_mm": 0.01, "envelope_mm": 800.0},
+    {"id": "mch_ora_turn_2", "factory_id": "fac_oragadam", "process": "TURN", "name": "CNC lathe 2", "achievable_tolerance_mm": 0.01, "envelope_mm": 800.0},
+    {"id": "mch_ora_turn_3", "factory_id": "fac_oragadam", "process": "TURN", "name": "CNC lathe 3", "achievable_tolerance_mm": 0.01, "envelope_mm": 800.0},
+    {"id": "mch_ora_mill_1", "factory_id": "fac_oragadam", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.01, "envelope_mm": 700.0},
+    {"id": "mch_ora_mill_2", "factory_id": "fac_oragadam", "process": "MILL", "name": "VMC 2", "achievable_tolerance_mm": 0.01, "envelope_mm": 700.0},
+    {"id": "mch_ora_drill_1", "factory_id": "fac_oragadam", "process": "DRILL_TAP", "name": "Drill/Tap centre 1", "achievable_tolerance_mm": 0.05, "envelope_mm": 400.0},
+
+    {"id": "mch_hos_turn_1", "factory_id": "fac_hosur", "process": "TURN", "name": "CNC lathe 1", "achievable_tolerance_mm": 0.015, "envelope_mm": 600.0},
+    {"id": "mch_hos_turn_2", "factory_id": "fac_hosur", "process": "TURN", "name": "CNC lathe 2", "achievable_tolerance_mm": 0.015, "envelope_mm": 600.0},
+    {"id": "mch_hos_mill_1", "factory_id": "fac_hosur", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.015, "envelope_mm": 650.0},
+    {"id": "mch_hos_mill_2", "factory_id": "fac_hosur", "process": "MILL", "name": "VMC 2", "achievable_tolerance_mm": 0.015, "envelope_mm": 650.0},
+    {"id": "mch_hos_heat_1", "factory_id": "fac_hosur", "process": "HEAT_TREAT", "name": "In-house heat treatment line", "achievable_tolerance_mm": null, "envelope_mm": 600.0},
+
+    {"id": "mch_pee_turn_1", "factory_id": "fac_peenya", "process": "TURN", "name": "CNC lathe 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 450.0},
+    {"id": "mch_pee_turn_2", "factory_id": "fac_peenya", "process": "TURN", "name": "CNC lathe 2", "achievable_tolerance_mm": 0.02, "envelope_mm": 450.0},
+    {"id": "mch_pee_mill_1", "factory_id": "fac_peenya", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 500.0},
+
+    {"id": "mch_cbe_mill_1", "factory_id": "fac_cbe", "process": "MILL", "name": "VMC 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 550.0},
+    {"id": "mch_cbe_mill_2", "factory_id": "fac_cbe", "process": "MILL", "name": "VMC 2", "achievable_tolerance_mm": 0.02, "envelope_mm": 550.0},
+    {"id": "mch_cbe_grind_1", "factory_id": "fac_cbe", "process": "GRIND_CYL", "name": "Cylindrical grinder 1", "achievable_tolerance_mm": 0.02, "envelope_mm": 350.0}
+  ]
+}

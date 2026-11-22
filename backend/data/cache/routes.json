@@ -1,0 +1,2602 @@
+{
+  "source": "openstreetmap-osmnx",
+  "fetched_at_utc": "2026-11-14T11:28:47.539940+00:00",
+  "low_threshold_m": 13.0,
+  "sample_spacing_m": 250.0,
+  "routes": [
+    {
+      "route_id": "rt_fac_owner_exit_padi",
+      "site_id": "fac_owner",
+      "exit_id": "exit_padi",
+      "exit_name": "Padi Junction",
+      "length_km": 6.05,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.10004,
+          "lon": 80.1569,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09989,
+          "lon": 80.1592,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09989,
+          "lon": 80.16115,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.1015,
+          "lon": 80.16207,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10101,
+          "lon": 80.16433,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10033,
+          "lon": 80.16653,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09999,
+          "lon": 80.1688,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09968,
+          "lon": 80.17108,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.0989,
+          "lon": 80.17324,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09818,
+          "lon": 80.17543,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09795,
+          "lon": 80.17772,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09811,
+          "lon": 80.18,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09862,
+          "lon": 80.18225,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.09927,
+          "lon": 80.18446,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09981,
+          "lon": 80.1867,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10078,
+          "lon": 80.18878,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10153,
+          "lon": 80.19094,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10194,
+          "lon": 80.19321,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10228,
+          "lon": 80.19537,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10288,
+          "lon": 80.19759,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10385,
+          "lon": 80.19922,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10609,
+          "lon": 80.19926,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10758,
+          "lon": 80.19842,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10745,
+          "lon": 80.19628,
+          "elevation_m": 13.0
+        }
+      ],
+      "low_share": 0.0
+    },
+    {
+      "route_id": "rt_fac_owner_exit_madhavaram",
+      "site_id": "fac_owner",
+      "exit_id": "exit_madhavaram",
+      "exit_name": "Madhavaram Junction",
+      "length_km": 12.33,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.10004,
+          "lon": 80.1569,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09989,
+          "lon": 80.1592,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09989,
+          "lon": 80.16115,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.1015,
+          "lon": 80.16207,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10101,
+          "lon": 80.16433,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10033,
+          "lon": 80.16653,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09999,
+          "lon": 80.1688,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09968,
+          "lon": 80.17108,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.0989,
+          "lon": 80.17324,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09818,
+          "lon": 80.17543,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09795,
+          "lon": 80.17772,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09811,
+          "lon": 80.18,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09862,
+          "lon": 80.18225,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.09927,
+          "lon": 80.18446,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09981,
+          "lon": 80.1867,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10078,
+          "lon": 80.18878,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10153,
+          "lon": 80.19094,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10194,
+          "lon": 80.19321,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10351,
+          "lon": 80.19431,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10573,
+          "lon": 80.19471,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10789,
+          "lon": 80.19532,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11006,
+          "lon": 80.19593,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.11223,
+          "lon": 80.19654,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.1144,
+          "lon": 80.19715,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.11659,
+          "lon": 80.19765,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.1187,
+          "lon": 80.19836,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12069,
+          "lon": 80.19945,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.12259,
+          "lon": 80.20065,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12385,
+          "lon": 80.20255,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.12502,
+          "lon": 80.20452,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12613,
+          "lon": 80.20653,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12726,
+          "lon": 80.20852,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12839,
+          "lon": 80.21052,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.13006,
+          "lon": 80.21205,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.13178,
+          "lon": 80.21354,
+          "elevation_m": 6.0
+        },
+        {
+          "lat": 13.1335,
+          "lon": 80.21502,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13544,
+          "lon": 80.21615,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13749,
+          "lon": 80.21709,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13957,
+          "lon": 80.21797,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.14167,
+          "lon": 80.21878,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.1438,
+          "lon": 80.21952,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14472,
+          "lon": 80.22062,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14315,
+          "lon": 80.22218,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14179,
+          "lon": 80.22402,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14043,
+          "lon": 80.22586,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.13907,
+          "lon": 80.22769,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13771,
+          "lon": 80.22954,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.13636,
+          "lon": 80.23138,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13822,
+          "lon": 80.23204,
+          "elevation_m": 8.0
+        }
+      ],
+      "low_share": 0.408
+    },
+    {
+      "route_id": "rt_fac_owner_exit_villivakkam",
+      "site_id": "fac_owner",
+      "exit_id": "exit_villivakkam",
+      "exit_name": "Villivakkam Junction",
+      "length_km": 9.4,
+      "underpass_count": 1,
+      "samples": [
+        {
+          "lat": 13.10004,
+          "lon": 80.1569,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09989,
+          "lon": 80.1592,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09989,
+          "lon": 80.16115,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.1015,
+          "lon": 80.16207,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10101,
+          "lon": 80.16433,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10033,
+          "lon": 80.16653,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09999,
+          "lon": 80.1688,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09968,
+          "lon": 80.17108,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.0989,
+          "lon": 80.17324,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09818,
+          "lon": 80.17543,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09795,
+          "lon": 80.17772,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09811,
+          "lon": 80.18,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09862,
+          "lon": 80.18225,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.09927,
+          "lon": 80.18446,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09981,
+          "lon": 80.1867,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10078,
+          "lon": 80.18878,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10153,
+          "lon": 80.19094,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10194,
+          "lon": 80.19321,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10228,
+          "lon": 80.19537,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10288,
+          "lon": 80.19759,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10334,
+          "lon": 80.19985,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10472,
+          "lon": 80.20078,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10658,
+          "lon": 80.20161,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10801,
+          "lon": 80.20339,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10888,
+          "lon": 80.20515,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10994,
+          "lon": 80.20634,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11215,
+          "lon": 80.20673,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11231,
+          "lon": 80.20824,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.1121,
+          "lon": 80.21054,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.111,
+          "lon": 80.21176,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11012,
+          "lon": 80.21323,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10988,
+          "lon": 80.21552,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10959,
+          "lon": 80.21781,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10931,
+          "lon": 80.2201,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10906,
+          "lon": 80.22239,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.1091,
+          "lon": 80.22469,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10851,
+          "lon": 80.22549,
+          "elevation_m": 12.0
+        }
+      ],
+      "low_share": 0.108
+    },
+    {
+      "route_id": "rt_ven_heat_exit_padi",
+      "site_id": "ven_heat",
+      "exit_id": "exit_padi",
+      "exit_name": "Padi Junction",
+      "length_km": 7.16,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.10652,
+          "lon": 80.15138,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10848,
+          "lon": 80.1522,
+          "elevation_m": 21.0
+        },
+        {
+          "lat": 13.1077,
+          "lon": 80.15233,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.1056,
+          "lon": 80.15314,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10418,
+          "lon": 80.15464,
+          "elevation_m": 22.0
+        },
+        {
+          "lat": 13.10343,
+          "lon": 80.15681,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10263,
+          "lon": 80.15897,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10183,
+          "lon": 80.16112,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10123,
+          "lon": 80.16334,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10062,
+          "lon": 80.16556,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10008,
+          "lon": 80.16779,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09988,
+          "lon": 80.17009,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09925,
+          "lon": 80.1723,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.09847,
+          "lon": 80.17446,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09806,
+          "lon": 80.17672,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.0979,
+          "lon": 80.17901,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.0984,
+          "lon": 80.18126,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09896,
+          "lon": 80.1835,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09957,
+          "lon": 80.18572,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10035,
+          "lon": 80.18787,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10129,
+          "lon": 80.18996,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10176,
+          "lon": 80.19222,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10217,
+          "lon": 80.19443,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10262,
+          "lon": 80.19662,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.10319,
+          "lon": 80.19885,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10511,
+          "lon": 80.19923,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10693,
+          "lon": 80.19879,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.1076,
+          "lon": 80.19728,
+          "elevation_m": 13.0
+        }
+      ],
+      "low_share": 0.036
+    },
+    {
+      "route_id": "rt_ven_heat_exit_madhavaram",
+      "site_id": "ven_heat",
+      "exit_id": "exit_madhavaram",
+      "exit_name": "Madhavaram Junction",
+      "length_km": 13.12,
+      "underpass_count": 1,
+      "samples": [
+        {
+          "lat": 13.10652,
+          "lon": 80.15138,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10848,
+          "lon": 80.1522,
+          "elevation_m": 21.0
+        },
+        {
+          "lat": 13.10896,
+          "lon": 80.1538,
+          "elevation_m": 21.0
+        },
+        {
+          "lat": 13.10987,
+          "lon": 80.15581,
+          "elevation_m": 23.0
+        },
+        {
+          "lat": 13.11125,
+          "lon": 80.15695,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.11102,
+          "lon": 80.15923,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.11061,
+          "lon": 80.16109,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10865,
+          "lon": 80.16116,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10855,
+          "lon": 80.1634,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10985,
+          "lon": 80.16441,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10938,
+          "lon": 80.16664,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10946,
+          "lon": 80.1689,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10928,
+          "lon": 80.1712,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10909,
+          "lon": 80.1735,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10887,
+          "lon": 80.1758,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10865,
+          "lon": 80.17809,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10857,
+          "lon": 80.18028,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11081,
+          "lon": 80.18045,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11124,
+          "lon": 80.18224,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.11159,
+          "lon": 80.18437,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.11358,
+          "lon": 80.18509,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.11568,
+          "lon": 80.18542,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11708,
+          "lon": 80.18628,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11771,
+          "lon": 80.18803,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11922,
+          "lon": 80.1891,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11948,
+          "lon": 80.19136,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.11936,
+          "lon": 80.19346,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.11934,
+          "lon": 80.19576,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.11879,
+          "lon": 80.19797,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.12035,
+          "lon": 80.19928,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.1223,
+          "lon": 80.2004,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12365,
+          "lon": 80.20222,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12483,
+          "lon": 80.20419,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.12594,
+          "lon": 80.20619,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12707,
+          "lon": 80.20819,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12819,
+          "lon": 80.21019,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.12977,
+          "lon": 80.2118,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.13149,
+          "lon": 80.21329,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13321,
+          "lon": 80.21477,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.13509,
+          "lon": 80.216,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13715,
+          "lon": 80.21694,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13922,
+          "lon": 80.21782,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.14132,
+          "lon": 80.21866,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14345,
+          "lon": 80.2194,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14497,
+          "lon": 80.22037,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14338,
+          "lon": 80.22187,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14202,
+          "lon": 80.22371,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14066,
+          "lon": 80.22555,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.1393,
+          "lon": 80.22739,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13794,
+          "lon": 80.22923,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.13659,
+          "lon": 80.23107,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13785,
+          "lon": 80.23197,
+          "elevation_m": 8.0
+        }
+      ],
+      "low_share": 0.442
+    },
+    {
+      "route_id": "rt_ven_heat_exit_villivakkam",
+      "site_id": "ven_heat",
+      "exit_id": "exit_villivakkam",
+      "exit_name": "Villivakkam Junction",
+      "length_km": 10.51,
+      "underpass_count": 1,
+      "samples": [
+        {
+          "lat": 13.10652,
+          "lon": 80.15138,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10848,
+          "lon": 80.1522,
+          "elevation_m": 21.0
+        },
+        {
+          "lat": 13.1077,
+          "lon": 80.15233,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.1056,
+          "lon": 80.15314,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10418,
+          "lon": 80.15464,
+          "elevation_m": 22.0
+        },
+        {
+          "lat": 13.10343,
+          "lon": 80.15681,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10263,
+          "lon": 80.15897,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10183,
+          "lon": 80.16112,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10123,
+          "lon": 80.16334,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.10062,
+          "lon": 80.16556,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10008,
+          "lon": 80.16779,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09988,
+          "lon": 80.17009,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09925,
+          "lon": 80.1723,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.09847,
+          "lon": 80.17446,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09806,
+          "lon": 80.17672,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.0979,
+          "lon": 80.17901,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.0984,
+          "lon": 80.18126,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09896,
+          "lon": 80.1835,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09957,
+          "lon": 80.18572,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10035,
+          "lon": 80.18787,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10129,
+          "lon": 80.18996,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10176,
+          "lon": 80.19222,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10217,
+          "lon": 80.19443,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10262,
+          "lon": 80.19662,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.10319,
+          "lon": 80.19885,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10374,
+          "lon": 80.20084,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10595,
+          "lon": 80.20083,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10737,
+          "lon": 80.20262,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10882,
+          "lon": 80.20439,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10897,
+          "lon": 80.20617,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11118,
+          "lon": 80.20656,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.1124,
+          "lon": 80.20723,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11222,
+          "lon": 80.20953,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11153,
+          "lon": 80.21129,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.11024,
+          "lon": 80.21222,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10996,
+          "lon": 80.21451,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10972,
+          "lon": 80.21681,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10943,
+          "lon": 80.2191,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10917,
+          "lon": 80.22139,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10903,
+          "lon": 80.22368,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10879,
+          "lon": 80.22594,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10829,
+          "lon": 80.22422,
+          "elevation_m": 11.0
+        }
+      ],
+      "low_share": 0.119
+    },
+    {
+      "route_id": "rt_sup_steel_exit_padi",
+      "site_id": "sup_steel",
+      "exit_id": "exit_padi",
+      "exit_name": "Padi Junction",
+      "length_km": 5.9,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.0962,
+          "lon": 80.16169,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09845,
+          "lon": 80.16183,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10069,
+          "lon": 80.16196,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10121,
+          "lon": 80.16346,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10059,
+          "lon": 80.16567,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10007,
+          "lon": 80.16791,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09986,
+          "lon": 80.1702,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09921,
+          "lon": 80.17241,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.09844,
+          "lon": 80.17457,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09804,
+          "lon": 80.17683,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09791,
+          "lon": 80.17913,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09842,
+          "lon": 80.18138,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.099,
+          "lon": 80.18361,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.0996,
+          "lon": 80.18583,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.1004,
+          "lon": 80.18797,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10133,
+          "lon": 80.19008,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10178,
+          "lon": 80.19233,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10215,
+          "lon": 80.19454,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10265,
+          "lon": 80.19673,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.10321,
+          "lon": 80.19896,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10522,
+          "lon": 80.19923,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10693,
+          "lon": 80.19867,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10758,
+          "lon": 80.19716,
+          "elevation_m": 13.0
+        }
+      ],
+      "low_share": 0.043
+    },
+    {
+      "route_id": "rt_sup_steel_exit_madhavaram",
+      "site_id": "sup_steel",
+      "exit_id": "exit_madhavaram",
+      "exit_name": "Madhavaram Junction",
+      "length_km": 12.18,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.0962,
+          "lon": 80.16169,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09845,
+          "lon": 80.16183,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10069,
+          "lon": 80.16196,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10121,
+          "lon": 80.16346,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10059,
+          "lon": 80.16567,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10007,
+          "lon": 80.16791,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09986,
+          "lon": 80.1702,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09921,
+          "lon": 80.17241,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.09844,
+          "lon": 80.17457,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09804,
+          "lon": 80.17683,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09791,
+          "lon": 80.17913,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09842,
+          "lon": 80.18138,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.099,
+          "lon": 80.18361,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.0996,
+          "lon": 80.18583,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.1004,
+          "lon": 80.18797,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10133,
+          "lon": 80.19008,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10178,
+          "lon": 80.19233,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10265,
+          "lon": 80.19418,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10488,
+          "lon": 80.19453,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10705,
+          "lon": 80.19509,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10922,
+          "lon": 80.1957,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.11139,
+          "lon": 80.19631,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.11356,
+          "lon": 80.19692,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.11573,
+          "lon": 80.19753,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.11793,
+          "lon": 80.19797,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11991,
+          "lon": 80.19905,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12192,
+          "lon": 80.20008,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12339,
+          "lon": 80.2018,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12455,
+          "lon": 80.20378,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.1257,
+          "lon": 80.20576,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12684,
+          "lon": 80.20775,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12795,
+          "lon": 80.20975,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.12939,
+          "lon": 80.21148,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.13111,
+          "lon": 80.21296,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13283,
+          "lon": 80.21445,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.13464,
+          "lon": 80.2158,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.1367,
+          "lon": 80.21673,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13876,
+          "lon": 80.21764,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14085,
+          "lon": 80.21849,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14298,
+          "lon": 80.21924,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14504,
+          "lon": 80.2199,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14368,
+          "lon": 80.22147,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.14232,
+          "lon": 80.22331,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14096,
+          "lon": 80.22515,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.13959,
+          "lon": 80.22698,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13824,
+          "lon": 80.22882,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.13689,
+          "lon": 80.23067,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.13737,
+          "lon": 80.23184,
+          "elevation_m": 7.0
+        }
+      ],
+      "low_share": 0.417
+    },
+    {
+      "route_id": "rt_sup_steel_exit_villivakkam",
+      "site_id": "sup_steel",
+      "exit_id": "exit_villivakkam",
+      "exit_name": "Villivakkam Junction",
+      "length_km": 9.25,
+      "underpass_count": 1,
+      "samples": [
+        {
+          "lat": 13.0962,
+          "lon": 80.16169,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09845,
+          "lon": 80.16183,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10069,
+          "lon": 80.16196,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10121,
+          "lon": 80.16346,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10059,
+          "lon": 80.16567,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10007,
+          "lon": 80.16791,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09986,
+          "lon": 80.1702,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09921,
+          "lon": 80.17241,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.09844,
+          "lon": 80.17457,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09804,
+          "lon": 80.17683,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09791,
+          "lon": 80.17913,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09842,
+          "lon": 80.18138,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.099,
+          "lon": 80.18361,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.0996,
+          "lon": 80.18583,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.1004,
+          "lon": 80.18797,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10133,
+          "lon": 80.19008,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10178,
+          "lon": 80.19233,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10215,
+          "lon": 80.19454,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10265,
+          "lon": 80.19673,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.10321,
+          "lon": 80.19896,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10385,
+          "lon": 80.20083,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10603,
+          "lon": 80.20092,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10744,
+          "lon": 80.20271,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10888,
+          "lon": 80.20449,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10908,
+          "lon": 80.20619,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11129,
+          "lon": 80.20658,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.11238,
+          "lon": 80.20735,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11221,
+          "lon": 80.20965,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11152,
+          "lon": 80.21141,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.11023,
+          "lon": 80.21234,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10995,
+          "lon": 80.21463,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.1097,
+          "lon": 80.21692,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10942,
+          "lon": 80.21921,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10915,
+          "lon": 80.22151,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10904,
+          "lon": 80.2238,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10875,
+          "lon": 80.22605,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10817,
+          "lon": 80.22421,
+          "elevation_m": 11.0
+        }
+      ],
+      "low_share": 0.135
+    },
+    {
+      "route_id": "rt_fac_amb_nb_exit_padi",
+      "site_id": "fac_amb_nb",
+      "exit_id": "exit_padi",
+      "exit_name": "Padi Junction",
+      "length_km": 6.12,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.09922,
+          "lon": 80.15704,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09991,
+          "lon": 80.15854,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09972,
+          "lon": 80.16052,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10092,
+          "lon": 80.16198,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10115,
+          "lon": 80.16369,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10052,
+          "lon": 80.1659,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10005,
+          "lon": 80.16815,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09981,
+          "lon": 80.17044,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09913,
+          "lon": 80.17263,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09837,
+          "lon": 80.1748,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09802,
+          "lon": 80.17707,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09796,
+          "lon": 80.17937,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09847,
+          "lon": 80.18161,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09907,
+          "lon": 80.18384,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09967,
+          "lon": 80.18606,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.1005,
+          "lon": 80.18819,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10139,
+          "lon": 80.19031,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10182,
+          "lon": 80.19257,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10211,
+          "lon": 80.19474,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10271,
+          "lon": 80.19696,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.10325,
+          "lon": 80.1992,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10546,
+          "lon": 80.19924,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10695,
+          "lon": 80.19843,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10754,
+          "lon": 80.19693,
+          "elevation_m": 13.0
+        }
+      ],
+      "low_share": 0.042
+    },
+    {
+      "route_id": "rt_fac_amb_nb_exit_madhavaram",
+      "site_id": "fac_amb_nb",
+      "exit_id": "exit_madhavaram",
+      "exit_name": "Madhavaram Junction",
+      "length_km": 12.4,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.09922,
+          "lon": 80.15704,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09991,
+          "lon": 80.15854,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09972,
+          "lon": 80.16052,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10092,
+          "lon": 80.16198,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10115,
+          "lon": 80.16369,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10052,
+          "lon": 80.1659,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10005,
+          "lon": 80.16815,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09981,
+          "lon": 80.17044,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09913,
+          "lon": 80.17263,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09837,
+          "lon": 80.1748,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09802,
+          "lon": 80.17707,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09796,
+          "lon": 80.17937,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09847,
+          "lon": 80.18161,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09907,
+          "lon": 80.18384,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09967,
+          "lon": 80.18606,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.1005,
+          "lon": 80.18819,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10139,
+          "lon": 80.19031,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10182,
+          "lon": 80.19257,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10288,
+          "lon": 80.19421,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10511,
+          "lon": 80.19456,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10728,
+          "lon": 80.19515,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10945,
+          "lon": 80.19576,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 13.11162,
+          "lon": 80.19637,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.11378,
+          "lon": 80.19698,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.11595,
+          "lon": 80.19758,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.11813,
+          "lon": 80.19807,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.12011,
+          "lon": 80.19917,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.1221,
+          "lon": 80.20023,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12352,
+          "lon": 80.202,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12468,
+          "lon": 80.20397,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12581,
+          "lon": 80.20596,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.12695,
+          "lon": 80.20796,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.12806,
+          "lon": 80.20996,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.12957,
+          "lon": 80.21163,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.13129,
+          "lon": 80.21312,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13301,
+          "lon": 80.2146,
+          "elevation_m": 8.0
+        },
+        {
+          "lat": 13.13485,
+          "lon": 80.2159,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.13691,
+          "lon": 80.21683,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13898,
+          "lon": 80.21772,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14107,
+          "lon": 80.21857,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.1432,
+          "lon": 80.21931,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14507,
+          "lon": 80.22013,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.14354,
+          "lon": 80.22166,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14218,
+          "lon": 80.2235,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.14081,
+          "lon": 80.22534,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.13945,
+          "lon": 80.22717,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.1381,
+          "lon": 80.22902,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.13674,
+          "lon": 80.23086,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.1376,
+          "lon": 80.2319,
+          "elevation_m": 8.0
+        }
+      ],
+      "low_share": 0.429
+    },
+    {
+      "route_id": "rt_fac_amb_nb_exit_villivakkam",
+      "site_id": "fac_amb_nb",
+      "exit_id": "exit_villivakkam",
+      "exit_name": "Villivakkam Junction",
+      "length_km": 9.47,
+      "underpass_count": 1,
+      "samples": [
+        {
+          "lat": 13.09922,
+          "lon": 80.15704,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09991,
+          "lon": 80.15854,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09972,
+          "lon": 80.16052,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10092,
+          "lon": 80.16198,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10115,
+          "lon": 80.16369,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10052,
+          "lon": 80.1659,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10005,
+          "lon": 80.16815,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09981,
+          "lon": 80.17044,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09913,
+          "lon": 80.17263,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.09837,
+          "lon": 80.1748,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.09802,
+          "lon": 80.17707,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09796,
+          "lon": 80.17937,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.09847,
+          "lon": 80.18161,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09907,
+          "lon": 80.18384,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.09967,
+          "lon": 80.18606,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.1005,
+          "lon": 80.18819,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.10139,
+          "lon": 80.19031,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.10182,
+          "lon": 80.19257,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10211,
+          "lon": 80.19474,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.10271,
+          "lon": 80.19696,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.10325,
+          "lon": 80.1992,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10409,
+          "lon": 80.20081,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.10617,
+          "lon": 80.2011,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10759,
+          "lon": 80.20289,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.109,
+          "lon": 80.20469,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.10931,
+          "lon": 80.20623,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.11152,
+          "lon": 80.20662,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.11235,
+          "lon": 80.20759,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.11218,
+          "lon": 80.20989,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.11134,
+          "lon": 80.21145,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.1102,
+          "lon": 80.21258,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10993,
+          "lon": 80.21487,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10967,
+          "lon": 80.21716,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.10939,
+          "lon": 80.21945,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.10913,
+          "lon": 80.22174,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.10906,
+          "lon": 80.22404,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.10862,
+          "lon": 80.22613,
+          "elevation_m": 13.0
+        }
+      ],
+      "low_share": 0.108
+    },
+    {
+      "route_id": "rt_fac_guindy_exit_kathipara",
+      "site_id": "fac_guindy",
+      "exit_id": "exit_kathipara",
+      "exit_name": "Kathipara Junction",
+      "length_km": 3.58,
+      "underpass_count": 1,
+      "samples": [
+        {
+          "lat": 13.01169,
+          "lon": 80.20974,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.01284,
+          "lon": 80.20859,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.0132,
+          "lon": 80.20632,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.01338,
+          "lon": 80.20427,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.01116,
+          "lon": 80.20398,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 13.00892,
+          "lon": 80.20387,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.00681,
+          "lon": 80.2034,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.00526,
+          "lon": 80.20173,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.00323,
+          "lon": 80.20084,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.00104,
+          "lon": 80.20049,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 12.9988,
+          "lon": 80.20049,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 12.99657,
+          "lon": 80.2008,
+          "elevation_m": 20.0
+        },
+        {
+          "lat": 12.99434,
+          "lon": 80.20112,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 12.99279,
+          "lon": 80.20054,
+          "elevation_m": 14.0
+        }
+      ],
+      "low_share": 0.143
+    },
+    {
+      "route_id": "rt_fac_guindy_exit_taramani",
+      "site_id": "fac_guindy",
+      "exit_id": "exit_taramani",
+      "exit_name": "Taramani (OMR) Junction",
+      "length_km": 6.18,
+      "underpass_count": 0,
+      "samples": [
+        {
+          "lat": 13.00912,
+          "lon": 80.21151,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.00973,
+          "lon": 80.21365,
+          "elevation_m": 17.0
+        },
+        {
+          "lat": 13.0105,
+          "lon": 80.21582,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.01125,
+          "lon": 80.21799,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.01203,
+          "lon": 80.22015,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.01298,
+          "lon": 80.22219,
+          "elevation_m": 11.0
+        },
+        {
+          "lat": 13.01317,
+          "lon": 80.22419,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.01244,
+          "lon": 80.22575,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.0116,
+          "lon": 80.22735,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.00959,
+          "lon": 80.22834,
+          "elevation_m": 14.0
+        },
+        {
+          "lat": 13.00884,
+          "lon": 80.2304,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.00839,
+          "lon": 80.23266,
+          "elevation_m": 19.0
+        },
+        {
+          "lat": 13.00794,
+          "lon": 80.23492,
+          "elevation_m": 18.0
+        },
+        {
+          "lat": 13.00749,
+          "lon": 80.23718,
+          "elevation_m": 16.0
+        },
+        {
+          "lat": 13.00707,
+          "lon": 80.23945,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.00679,
+          "lon": 80.24173,
+          "elevation_m": 12.0
+        },
+        {
+          "lat": 13.00659,
+          "lon": 80.24398,
+          "elevation_m": 15.0
+        },
+        {
+          "lat": 13.00498,
+          "lon": 80.24561,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 13.00338,
+          "lon": 80.24723,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 13.00137,
+          "lon": 80.24806,
+          "elevation_m": 7.0
+        },
+        {
+          "lat": 12.99917,
+          "lon": 80.24858,
+          "elevation_m": 10.0
+        },
+        {
+          "lat": 12.99699,
+          "lon": 80.24911,
+          "elevation_m": 13.0
+        },
+        {
+          "lat": 12.99481,
+          "lon": 80.24968,
+          "elevation_m": 9.0
+        },
+        {
+          "lat": 12.99484,
+          "lon": 80.24824,
+          "elevation_m": 11.0
+        }
+      ],
+      "low_share": 0.333
+    }
+  ]
+}

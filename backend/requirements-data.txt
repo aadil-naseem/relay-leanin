@@ -1,0 +1,3 @@
+# Prefetch scripts and sample-drawing generation only. Not needed at runtime.
+osmnx
+reportlab

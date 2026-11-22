@@ -1,0 +1,67 @@
+{
+  "sha256": "2db008bb992963e293c93a1e5602906131aa50dafd94ba6705e3849c4c7dfb5b",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "fields": {
+    "part_name": "PUMP SHAFT",
+    "drawing_no": "DWG-PSH-014",
+    "revision": "B",
+    "customer": "ACME Pumps (SAMPLE)",
+    "process_route": [
+      {
+        "process": "TURN"
+      },
+      {
+        "process": "MILL"
+      }
+    ],
+    "material": {
+      "grade": "EN8",
+      "standard": null,
+      "form": null
+    },
+    "dimensions": [
+      {
+        "label": "SHAFT DIAMETER",
+        "nominal_mm": 20,
+        "tol_plus_mm": 0.02,
+        "tol_minus_mm": 0.0,
+        "critical": false
+      },
+      {
+        "label": "KEYWAY WIDTH",
+        "nominal_mm": 8,
+        "tol_plus_mm": 0.0,
+        "tol_minus_mm": 0.0,
+        "critical": false
+      },
+      {
+        "label": "KEYWAY DEPTH",
+        "nominal_mm": 4,
+        "tol_plus_mm": 0.0,
+        "tol_minus_mm": 0.0,
+        "critical": false
+      },
+      {
+        "label": "LENGTH",
+        "nominal_mm": 250,
+        "tol_plus_mm": 0.1,
+        "tol_minus_mm": 0.1,
+        "critical": false
+      }
+    ],
+    "tightest_tolerance_mm": 0.0,
+    "general_tolerance_standard": "ISO 2768-m",
+    "surface_finish_ra_um": 1.6,
+    "heat_treatment": null,
+    "coating": null,
+    "tooling_hints": [
+      "DEBURR ALL EDGES"
+    ],
+    "quantity": 200,
+    "deadline": null,
+    "inspection_notes": null,
+    "envelope_mm": 250.0
+  },
+  "saved_at_utc": "2026-11-14T13:33:58+00:00"
+}

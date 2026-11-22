@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+pydantic-settings
+sqlalchemy>=2.0
+httpx
+tenacity
+pyyaml
+networkx
+numpy
+shapely
+jinja2
+python-multipart
+pymupdf
+pillow
+python-dotenv

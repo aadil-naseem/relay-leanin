@@ -1,0 +1,2 @@
+# Optional. Only if an image-only drawing needs OCR and time allows.
+rapidocr-onnxruntime

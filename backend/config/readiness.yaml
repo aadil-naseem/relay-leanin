@@ -1,0 +1,7 @@
+﻿# M8 Recovery Readiness Score constants (blueprint section 7.5).
+# Only READY + not-stale + non-correlated backups within the window count.
+staleness_days: 90
+expiring_soon_days: 14
+default_window_hours: 48
+windows: [24, 48, 72]
+min_separation_km: 10

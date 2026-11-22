@@ -1,0 +1,63 @@
+{
+  "sha256": "084851f5d0be0d6fe64e2bc87b965b3f89d1064983951dcd400b96466192caee",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "fields": {
+    "part_name": "VALVE BODY FLANGE",
+    "drawing_no": "DWG-VBF-207",
+    "revision": "C",
+    "customer": "Delta Valves (SAMPLE)",
+    "process_route": [
+      {
+        "process": "TURN"
+      },
+      {
+        "process": "MILL"
+      },
+      {
+        "process": "DRILL_TAP"
+      }
+    ],
+    "material": {
+      "grade": "SS304",
+      "standard": null,
+      "form": null
+    },
+    "dimensions": [
+      {
+        "label": "FLANGE OD",
+        "nominal_mm": 120.0,
+        "tol_plus_mm": 0.05,
+        "tol_minus_mm": 0.05,
+        "critical": false
+      },
+      {
+        "label": "DRILL",
+        "nominal_mm": 6.8,
+        "tol_plus_mm": 0.0,
+        "tol_minus_mm": 0.0,
+        "critical": false
+      },
+      {
+        "label": "THICKNESS",
+        "nominal_mm": 15.0,
+        "tol_plus_mm": 0.1,
+        "tol_minus_mm": 0.1,
+        "critical": false
+      }
+    ],
+    "tightest_tolerance_mm": 0.05,
+    "general_tolerance_standard": "ISO 2768-m",
+    "surface_finish_ra_um": 3.2,
+    "heat_treatment": null,
+    "coating": null,
+    "tooling_hints": [
+      "FACE MILL FINISH"
+    ],
+    "quantity": 40,
+    "deadline": null,
+    "inspection_notes": null,
+    "envelope_mm": 120.0
+  },
+  "saved_at_utc": "2026-11-14T13:34:04+00:00"
+}

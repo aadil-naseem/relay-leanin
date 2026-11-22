@@ -1,0 +1,15 @@
+﻿# Material catalogue: grade, family, and text aliases for the rules parser (Phase 12).
+# Aliases are matched against text found on drawings; "grade" is the canonical name shown in the UI.
+# Numeric-looking aliases (EN standard numbers) are quoted so YAML keeps them as strings.
+- {grade: EN8, family: carbon_steel, aliases: [EN8, EN-8, EN 8, "070M40", C40]}
+- {grade: EN24, family: alloy_steel, aliases: [EN24, EN-24, EN 24, "817M40"]}
+- {grade: EN19, family: alloy_steel, aliases: [EN19, EN-19, EN 19, "708M40", "42CrMo4"]}
+- {grade: C45, family: carbon_steel, aliases: [C45, CK45, "1.0503"]}
+- {grade: SS304, family: stainless_steel, aliases: [SS304, SS 304, AISI 304, AISI304, "1.4301"]}
+- {grade: SS316, family: stainless_steel, aliases: [SS316, SS 316, AISI 316, AISI316, "1.4404"]}
+- {grade: Al6061, family: aluminium, aliases: [Al6061, AL6061, AL 6061, "6061", "6061-T6"]}
+- {grade: Al6082, family: aluminium, aliases: [Al6082, AL6082, "6082", HE30]}
+- {grade: Brass IS 319, family: brass, aliases: [Brass, BRASS, IS 319, IS319, CZ121]}
+- {grade: Mild Steel, family: mild_steel, aliases: [MS, Mild Steel, MILD STEEL, IS 2062]}
+- {grade: Delrin, family: polymer, aliases: [Delrin, DELRIN, POM, Acetal, ACETAL]}
+- {grade: Ti-6Al-4V, family: titanium, aliases: [Ti-6Al-4V, Ti6Al4V, TI-6AL-4V, Grade 5 titanium, Ti64]}

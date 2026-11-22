@@ -1,0 +1,89 @@
+{
+  "_note": "Blueprint section 9: six parts with routes. PRT-A is the no-fallback order (grinder + heat vendor + EN24 supplier SPOFs); PRT-B is the hero recovery order; PRT-C covered by Oragadam (which carries a drill/tap centre for that route); PRT-F Hosur-dependent (in-house heat treat).",
+  "parts": [
+    {
+      "id": "prt_a",
+      "factory_id": "fac_owner",
+      "name": "Hydraulic piston rod",
+      "drawing_no": "DWG-HPR-001",
+      "customer_alias": "ACME Hydraulics (SAMPLE)",
+      "material": "EN24",
+      "is_critical": true,
+      "typical_batch_qty": 50,
+      "steps": [
+        {"seq": 1, "process": "TURN", "hours_per_unit": 0.10, "setup_hours": 1.0, "tolerance_mm": 0.02, "outsourced": false},
+        {"seq": 2, "process": "HEAT_TREAT", "hours_per_unit": 0.0, "setup_hours": 0.0, "tolerance_mm": null, "outsourced": true},
+        {"seq": 3, "process": "GRIND_CYL", "hours_per_unit": 0.12, "setup_hours": 1.5, "tolerance_mm": 0.005, "outsourced": false}
+      ]
+    },
+    {
+      "id": "prt_b",
+      "factory_id": "fac_owner",
+      "name": "Pump shaft",
+      "drawing_no": "DWG-PSH-014",
+      "customer_alias": "ACME Pumps (SAMPLE)",
+      "material": "EN8",
+      "is_critical": true,
+      "typical_batch_qty": 200,
+      "steps": [
+        {"seq": 1, "process": "TURN", "hours_per_unit": 0.08, "setup_hours": 0.8, "tolerance_mm": 0.02, "outsourced": false},
+        {"seq": 2, "process": "MILL", "hours_per_unit": 0.12, "setup_hours": 1.0, "tolerance_mm": 0.05, "outsourced": false}
+      ]
+    },
+    {
+      "id": "prt_c",
+      "factory_id": "fac_owner",
+      "name": "Valve body flange",
+      "drawing_no": "DWG-VBF-207",
+      "customer_alias": "Delta Valves (SAMPLE)",
+      "material": "SS304",
+      "is_critical": true,
+      "typical_batch_qty": 40,
+      "steps": [
+        {"seq": 1, "process": "MILL", "hours_per_unit": 0.15, "setup_hours": 1.2, "tolerance_mm": 0.05, "outsourced": false},
+        {"seq": 2, "process": "DRILL_TAP", "hours_per_unit": 0.08, "setup_hours": 0.5, "tolerance_mm": null, "outsourced": false}
+      ]
+    },
+    {
+      "id": "prt_d",
+      "factory_id": "fac_owner",
+      "name": "Bracket",
+      "drawing_no": "DWG-BKT-033",
+      "customer_alias": "Fasteners Co (SAMPLE)",
+      "material": "Al6061",
+      "is_critical": false,
+      "typical_batch_qty": 300,
+      "steps": [
+        {"seq": 1, "process": "MILL", "hours_per_unit": 0.05, "setup_hours": 0.4, "tolerance_mm": 0.1, "outsourced": false}
+      ]
+    },
+    {
+      "id": "prt_e",
+      "factory_id": "fac_owner",
+      "name": "Bushing",
+      "drawing_no": "DWG-BSH-118",
+      "customer_alias": "Iron Motors (SAMPLE)",
+      "material": "Brass IS 319",
+      "is_critical": false,
+      "typical_batch_qty": 500,
+      "steps": [
+        {"seq": 1, "process": "TURN", "hours_per_unit": 0.03, "setup_hours": 0.3, "tolerance_mm": 0.05, "outsourced": false}
+      ]
+    },
+    {
+      "id": "prt_f",
+      "factory_id": "fac_owner",
+      "name": "Gear blank",
+      "drawing_no": "DWG-GBL-052",
+      "customer_alias": "Delta Valves (SAMPLE)",
+      "material": "EN8",
+      "is_critical": true,
+      "typical_batch_qty": 60,
+      "steps": [
+        {"seq": 1, "process": "TURN", "hours_per_unit": 0.09, "setup_hours": 0.9, "tolerance_mm": 0.02, "outsourced": false},
+        {"seq": 2, "process": "MILL", "hours_per_unit": 0.11, "setup_hours": 1.0, "tolerance_mm": 0.05, "outsourced": false},
+        {"seq": 3, "process": "HEAT_TREAT", "hours_per_unit": 0.0, "setup_hours": 0.0, "tolerance_mm": null, "outsourced": true}
+      ]
+    }
+  ]
+}

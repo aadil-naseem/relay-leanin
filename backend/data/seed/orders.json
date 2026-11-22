@@ -1,0 +1,13 @@
+{
+  "_note": "Eight orders, all for the owner factory. Due dates are RELATIVE (due_in_days). Three orders due within 5 days and worth 2.47M INR combined sit behind the storm window (101, 102, 107) so the stress summary clears invariant 2; 108 due in 12 days stays on track.",
+  "orders": [
+    {"id": "ord_101", "part_id": "prt_a", "qty": 50,  "due_in_days": 4,  "value_inr": 1200000.0, "customer_alias": "ACME Hydraulics (SAMPLE)"},
+    {"id": "ord_102", "part_id": "prt_b", "qty": 200, "due_in_days": 5,  "value_inr": 850000.0,  "customer_alias": "ACME Pumps (SAMPLE)"},
+    {"id": "ord_103", "part_id": "prt_c", "qty": 40,  "due_in_days": 6,  "value_inr": 600000.0,  "customer_alias": "Delta Valves (SAMPLE)"},
+    {"id": "ord_104", "part_id": "prt_d", "qty": 300, "due_in_days": 2,  "value_inr": 180000.0,  "customer_alias": "Fasteners Co (SAMPLE)"},
+    {"id": "ord_105", "part_id": "prt_e", "qty": 500, "due_in_days": 7,  "value_inr": 150000.0,  "customer_alias": "Iron Motors (SAMPLE)"},
+    {"id": "ord_106", "part_id": "prt_f", "qty": 60,  "due_in_days": 8,  "value_inr": 700000.0,  "customer_alias": "Delta Valves (SAMPLE)"},
+    {"id": "ord_107", "part_id": "prt_b", "qty": 100, "due_in_days": 3,  "value_inr": 420000.0,  "customer_alias": "ACME Pumps (SAMPLE)"},
+    {"id": "ord_108", "part_id": "prt_c", "qty": 25,  "due_in_days": 12, "value_inr": 350000.0,  "customer_alias": "Delta Valves (SAMPLE)"}
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "sha256": "91b2df72cf6528649a3d165717f50bd10a9ba0113dbae887354cc14dd1128fc2",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "fields": {
+    "part_name": "HYDRAULIC PISTON ROD",
+    "drawing_no": "DWG-HPR-001",
+    "revision": "A",
+    "customer": "ACME Hydraulics (SAMPLE)",
+    "process_route": [
+      {
+        "process": "TURN"
+      },
+      {
+        "process": "GRIND_CYL"
+      },
+      {
+        "process": "HEAT_TREAT"
+      },
+      {
+        "process": "SURFACE_TREAT"
+      }
+    ],
+    "material": {
+      "grade": "EN24",
+      "standard": "BS 970",
+      "form": "BAR STOCK"
+    },
+    "dimensions": [
+      {
+        "label": "ROD DIAMETER",
+        "nominal_mm": 20.0,
+        "tol_plus_mm": 0.005,
+        "tol_minus_mm": 0.005,
+        "critical": false
+      },
+      {
+        "label": "OVERALL LENGTH",
+        "nominal_mm": 300,
+        "tol_plus_mm": 0.2,
+        "tol_minus_mm": 0.2,
+        "critical": false
+      }
+    ],
+    "tightest_tolerance_mm": 0.005,
+    "general_tolerance_standard": null,
+    "surface_finish_ra_um": 0.4,
+    "heat_treatment": "INDUCTION HARDENED HRC 58-62",
+    "coating": "HARD CHROME PLATED 0.02 THICK",
+    "tooling_hints": [
+      "TURN FROM BAR STOCK BEFORE GRINDING"
+    ],
+    "quantity": 50,
+    "deadline": null,
+    "inspection_notes": null,
+    "envelope_mm": 300
+  },
+  "saved_at_utc": "2026-11-14T13:34:01+00:00"
+}

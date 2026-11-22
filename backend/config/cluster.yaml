@@ -1,0 +1,53 @@
+﻿# Demo world: cluster, fictional factory sites, and the Michaung back-test sites
+# (blueprint section 9 + Phase 4). Every factory below is fictional and is labelled
+# sample / simulated in the product. Weather, terrain and roads are real.
+name: Ambattur Industrial Estate
+city: Chennai, Tamil Nadu
+note: >
+  Public reports describe the Ambattur north phase (about 1,500 units) flooded
+  during Cyclone Michaung (Dec 2023), while several SIPCOT estates (e.g.
+  Oragadam) resumed within days. Zones are illustrative planning zones from
+  public reporting, not official flood maps.
+
+# Phase 0 verification (docs/VERIFIED_FACTS.md): the storm peak is 2023-12-04
+# (238.7 mm at Ambattur). Starting the replay series here puts heavy onset at
+# ~37-40 h after t=0, inside the 24-40 h lead the blueprint wants.
+replay:
+  event: michaung_2023
+  series_start_utc: 2023-12-03T00:00:00Z
+  series_hours: 72
+
+sites:
+  - {id: fac_owner, role: OWNER, name: Sample Precision Components, lat: 13.100, lon: 80.155, cluster_id: cl_ambattur, hazard_zone_id: zone_ambattur_north, grid_id: grid_chennai_metro}
+  - {id: ven_heat, role: VENDOR, name: Sample Heat Treat Works, lat: 13.105, lon: 80.150, cluster_id: cl_ambattur, hazard_zone_id: zone_ambattur_north, grid_id: grid_chennai_metro}
+  - {id: sup_steel, role: SUPPLIER, name: Sample Steels (Ambattur), lat: 13.095, lon: 80.160, cluster_id: cl_ambattur, hazard_zone_id: zone_ambattur_north, grid_id: grid_chennai_metro}
+  - {id: fac_amb_nb, role: PARTNER, name: Sample Precision Works (Ambattur), lat: 13.098, lon: 80.158, cluster_id: cl_ambattur, hazard_zone_id: zone_ambattur_north, grid_id: grid_chennai_metro, note: technically suitable but EXCLUDED - same flood zone}
+  - {id: fac_guindy, role: PARTNER, name: Sample Machining (Guindy), lat: 13.010, lon: 80.212, cluster_id: cl_guindy, hazard_zone_id: zone_guindy_adyar, grid_id: grid_chennai_metro, note: same storm footprint - excluded or down-ranked by live exposure}
+  - {id: fac_oragadam, role: PARTNER, name: Sample Components (Oragadam), lat: 12.842, lon: 79.952, cluster_id: cl_oragadam, hazard_zone_id: null, grid_id: grid_kanchi_south, note: "READY, fresh - the hero backup"}
+  - {id: fac_hosur, role: PARTNER, name: Sample Engineering (Hosur), lat: 12.740, lon: 77.830, cluster_id: cl_hosur, hazard_zone_id: null, grid_id: grid_hosur, note: APPROVAL_PENDING - missing CUSTOMER_APPROVED and CAPACITY_RECONFIRMED}
+  - {id: fac_peenya, role: PARTNER, name: "Sample Works (Peenya, Bengaluru)", lat: 13.028, lon: 77.520, cluster_id: cl_peenya, hazard_zone_id: null, grid_id: grid_blr, note: "READY but STALE (~120 days) - does not count"}
+  - {id: fac_cbe, role: PARTNER, name: Sample Tools (Coimbatore), lat: 10.950, lon: 76.970, cluster_id: cl_cbe, hazard_zone_id: null, grid_id: grid_cbe, note: POTENTIAL_MATCH - lacks grinding at the needed tolerance}
+
+# Exit junctions for access-route exposure (Phase 4 prefetch, M4). Real road
+# junctions, one per main direction out of the estate. Routes are only computed
+# for sites inside the Michaung storm footprint (Chennai metro): far partners
+# (Oragadam, Hosur, Peenya, Coimbatore) are never exposed in this story.
+exits:
+  cl_ambattur:
+    - {id: exit_padi, name: Padi Junction, lat: 13.1076, lon: 80.1965}
+    - {id: exit_madhavaram, name: Madhavaram Junction, lat: 13.1392, lon: 80.2317}
+    - {id: exit_villivakkam, name: Villivakkam Junction, lat: 13.1080, lon: 80.2237}
+  cl_guindy:
+    - {id: exit_kathipara, name: Kathipara Junction, lat: 12.9926, lon: 80.1999}
+    - {id: exit_taramani, name: Taramani (OMR) Junction, lat: 12.9907, lon: 80.2477}
+
+# Back-test sites for the exposure engine (Phase 7): flooded during Michaung vs not.
+backtest_flooded:
+  - {id: bt_ambattur_north, name: Ambattur north phase, lat: 13.102, lon: 80.152}
+  - {id: bt_villivakkam, name: Villivakkam, lat: 13.106, lon: 80.227}
+  - {id: bt_thirumudivakkam, name: Thirumudivakkam, lat: 12.997, lon: 80.057}
+  - {id: bt_perungudi, name: Perungudi, lat: 12.965, lon: 80.243}
+backtest_not_flooded:
+  - {id: bt_oragadam, name: Oragadam, lat: 12.842, lon: 79.952}
+  - {id: bt_irungattukottai, name: Irungattukottai, lat: 12.817, lon: 79.994}
+  - {id: bt_pillaipakkam, name: Pillaipakkam, lat: 12.806, lon: 79.998}

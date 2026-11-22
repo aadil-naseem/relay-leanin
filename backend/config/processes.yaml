@@ -1,0 +1,51 @@
+﻿# Process catalogue. hours_per_unit are planner estimates - a drawing does not contain
+# cycle times; they are editable in the UI and must be said so on stage (section 7.6).
+TURN:
+  default_hours_per_unit: 0.10
+  default_setup_hours: 1.0
+  water_dependent: false
+  vendor_batch: false
+  tolerance_range_mm: [0.01, 0.20]
+MILL:
+  default_hours_per_unit: 0.15
+  default_setup_hours: 1.5
+  water_dependent: false
+  vendor_batch: false
+  tolerance_range_mm: [0.01, 0.25]
+DRILL_TAP:
+  default_hours_per_unit: 0.05
+  default_setup_hours: 0.5
+  water_dependent: false
+  vendor_batch: false
+  tolerance_range_mm: [0.05, 0.30]
+GRIND_CYL:
+  default_hours_per_unit: 0.12
+  default_setup_hours: 2.0
+  water_dependent: false
+  vendor_batch: false
+  tolerance_range_mm: [0.002, 0.02]
+GRIND_SURF:
+  default_hours_per_unit: 0.12
+  default_setup_hours: 2.0
+  water_dependent: false
+  vendor_batch: false
+  tolerance_range_mm: [0.002, 0.02]
+WIRE_EDM:
+  default_hours_per_unit: 0.40
+  default_setup_hours: 2.0
+  water_dependent: false
+  vendor_batch: false
+  tolerance_range_mm: [0.003, 0.02]
+# Vendor-batch processes: done at a vendor, not on an in-house machine.
+HEAT_TREAT:
+  default_hours_per_unit: 0.0
+  default_setup_hours: 0.0
+  water_dependent: true
+  vendor_batch: true
+  tolerance_range_mm: null
+SURFACE_TREAT:
+  default_hours_per_unit: 0.0
+  default_setup_hours: 0.0
+  water_dependent: true
+  vendor_batch: true
+  tolerance_range_mm: null

@@ -1,0 +1,15 @@
+﻿# M6 risk-aware backup matching constants (blueprint section 7.4).
+# A match is a candidate, not an approved backup - ranking weights never change that.
+min_separation_km: 10
+logistics_speed_kmh: 35
+logistics_base_hours: 4
+recommended_set_size: 2
+stale_ready_weight: 0.5    # a stale READY ranks between READY and APPROVAL_PENDING
+
+ranking_weights: {status: 0.40, time_slack: 0.20, capacity_slack: 0.15, freshness: 0.15, separation: 0.10}
+status_weights:
+  READY: 1.0
+  APPROVAL_PENDING: 0.6
+  ASSESSMENT_IN_PROGRESS: 0.4
+  POTENTIAL_MATCH: 0.2
+  UNAVAILABLE_EXPIRED: 0.0

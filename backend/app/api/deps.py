@@ -1,0 +1,5 @@
+﻿"""Shared FastAPI dependencies."""
+
+from app.db import get_db
+
+__all__ = ["get_db"]

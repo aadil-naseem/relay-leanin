@@ -1,0 +1,3 @@
+﻿# M5 what-if stress test constants (blueprint section 7.3).
+due_buffer_hours: 24      # AT_RISK if the stressed finish lands within this many hours of due
+transport_hours: 4        # fixed hand-off / dispatch leg inside the scheduler

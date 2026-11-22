@@ -1,0 +1,37 @@
+RECOVERY HANDOVER PACK - {{ label }}
+====================================
+Partner: {{ partner_name }}
+Job: {{ job }}
+
+THIS PACK IS {{ label }}. Activation is subject to human, customer and
+contractual approvals outside the software.
+
+Job requirements
+----------------
+- Material: {{ material }}
+- Quantity: {{ quantity }}
+- Deadline: {{ deadline }}
+- Process route:{% for step in route %}
+  {{ step.seq }}. {{ step.process }}{% if step.tolerance_mm %} (tolerance {{ "%.3f"|format(step.tolerance_mm) }} mm){% endif %}{% endfor %}
+
+Authorised documents
+--------------------
+{% for doc in documents %}- {{ doc }}
+{% endfor %}
+Inspection checklist
+--------------------
+{% for item in checklist %}- {{ item }}
+{% endfor %}
+Required approvals
+------------------
+{% for approval in approvals %}- {{ approval }}
+{% endfor %}
+Responsibilities
+----------------
+{% for item in responsibilities %}- {{ item.party }}: {{ item.responsibility }}
+{% endfor %}
+Simulated milestones (offsets from request, not commitments)
+------------------------------------------------------------
+{% for m in milestones %}- {{ m.step_key }}: t+{{ m.target_offset_hours|int }} h
+{% endfor %}
+{{ activation_note }}

@@ -1,0 +1,48 @@
+{
+  "_label": "Illustrative planning zones curated from public reporting of Cyclone Michaung (Dec 2023). NOT official flood maps. Radius is a planning heuristic around the reported estate, not a surveyed boundary.",
+  "zones": [
+    {
+      "id": "zone_ambattur_north",
+      "name": "Ambattur Industrial Estate, north phase",
+      "center_lat": 13.102,
+      "center_lon": 80.152,
+      "radius_m": 4000,
+      "note": "Public reporting: the north phase of the Ambattur Industrial Estate stood in water for days after Cyclone Michaung (KNN India, 2023-12-07: 'The North phase has three sectors. Water is slowly receding in sector one while the other two sectors are still [flooded]'); The Hindu (2023-12-04): 'The Ambattur Industrial Estate was the most affected. Water seeped into many units.' Estate loss estimated at ~Rs 2,000 crore (The Week, 2023-12-06)."
+    },
+    {
+      "id": "zone_villivakkam",
+      "name": "Villivakkam",
+      "center_lat": 13.106,
+      "center_lon": 80.227,
+      "radius_m": 2000,
+      "note": "Public reporting: Villivakkam industrial estate units flooded days after the storm receded, water reaching shop floors and damaging machines, finished goods and raw materials (Deccan Herald, 2023-12: 'MSME units around Chennai see damages of over Rs 3,000 cr')."
+    },
+    {
+      "id": "zone_thirumudivakkam",
+      "name": "Thirumudivakkam industrial estate",
+      "center_lat": 12.997,
+      "center_lon": 80.057,
+      "radius_m": 2500,
+      "note": "Public reporting: the industrial estates at Ambattur, Thirumudivakkam, Perungudi, Thirumazhisai and Kakkalur were 'still submerged in four to six feet of water' two days after landfall (The Week, 2023-12-06); The Hindu Businessline lists Thirumudivakkam among the estates where flooding crippled MSME operations."
+    },
+    {
+      "id": "zone_perungudi",
+      "name": "Perungudi industrial estate",
+      "center_lat": 12.965,
+      "center_lon": 80.243,
+      "radius_m": 2500,
+      "note": "Public reporting: Perungudi listed among government-developed industrial estates where flooding crippled MSME units (The Hindu Businessline, 2023-12-08); The Week (2023-12-06) reports it submerged in four to six feet of water."
+    },
+    {
+      "id": "zone_guindy_adyar",
+      "name": "Guindy - Adyar low-lying belt",
+      "center_lat": 13.010,
+      "center_lon": 80.212,
+      "radius_m": 3000,
+      "note": "Public reporting: Chennai's Guindy/Adyar belt, draining into the Adyar river and Buckingham Canal, saw widespread waterlogging and closure of industrial units during Michaung (The Hindu, 2023-12-04: 'Downpour forces industrial units to suspend operations in Chennai'; Times of India, 2023-12-06, on the Ambattur-Padi cluster; Wikipedia: businesses impacted by flooding and power shortages). Larger units resumed within days (Indian Express: >90% of large-scale units resumed)."
+    }
+  ],
+  "cited_against": {
+    "oragadam": "Not flooded: 'situation in Oragadam, another automobile hub in the suburbs... was better' with large industrial parks resuming operations after Cyclone Michaung (Deccan Herald, 2023-12, reporting the Tamil Nadu government statement)."
+  }
+}

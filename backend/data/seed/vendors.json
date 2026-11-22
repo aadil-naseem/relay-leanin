@@ -1,0 +1,35 @@
+{
+  "_note": "Blueprint section 9: one heat-treat vendor and one EN24 supplier, both inside the owner's flood zone - each is a single point of failure for the owner.",
+  "vendors": [
+    {
+      "id": "ven_heat",
+      "kind": "VENDOR",
+      "name": "Sample Heat Treat Works",
+      "lat": 13.105,
+      "lon": 80.150,
+      "cluster_id": "cl_ambattur",
+      "hazard_zone_id": "zone_ambattur_north",
+      "grid_id": "grid_chennai_metro",
+      "process": "HEAT_TREAT",
+      "material": null,
+      "turnaround_hours": 24.0
+    },
+    {
+      "id": "sup_steel",
+      "kind": "SUPPLIER",
+      "name": "Sample Steels (Ambattur)",
+      "lat": 13.095,
+      "lon": 80.160,
+      "cluster_id": "cl_ambattur",
+      "hazard_zone_id": "zone_ambattur_north",
+      "grid_id": "grid_chennai_metro",
+      "process": null,
+      "material": "EN24",
+      "turnaround_hours": 48.0
+    }
+  ],
+  "vendor_links": [
+    {"factory_id": "fac_owner", "vendor_id": "ven_heat"},
+    {"factory_id": "fac_owner", "vendor_id": "sup_steel"}
+  ]
+}
