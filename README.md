@@ -7,7 +7,7 @@ engineering drawing, traces which machines, vendors and materials each order act
 scores how exposed those sites are to a storm, and shows which backup factories could take the
 work — flagging the ones standing in the same water.
 
-Built for the **Vihaan X** hackathon, Open Innovation track.
+Built for the **LeanIN* hackathon, Open Innovation track.
 
 
 > **API docs:** <https://relay-api-l6df.onrender.com/docs> · **Health:** <https://relay-api-l6df.onrender.com/api/v1/health>
