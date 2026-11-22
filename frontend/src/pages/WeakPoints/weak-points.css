@@ -1,0 +1,76 @@
+.weak-page { display: grid; gap: 16px; width: min(100% - 40px, 1600px); margin: 0 auto; padding: 24px 0 72px; }
+.weak-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
+.weak-heading h1 { margin: 4px 0 0; color: var(--c-white); font: 800 clamp(34px, 4vw, 54px)/0.9 var(--f-display); text-transform: uppercase; }
+.weak-layout { display: grid; grid-template-columns: minmax(300px, 0.8fr) minmax(0, 2fr); align-items: start; gap: 14px; }
+.weak-list { padding: 16px; }
+.weak-list__heading { margin-bottom: 8px; color: var(--c-pale); font: 11px var(--f-mono); letter-spacing: 0.07em; }
+.weak-list ol { display: grid; margin: 0; padding: 0; list-style: none; }
+.weak-list li { border-top: 1px solid var(--c-cream-12); }
+.weak-list li button { display: flex; width: 100%; min-height: 66px; align-items: center; gap: 10px; padding: 9px 3px; border: 0; color: var(--c-cream); background: transparent; cursor: pointer; text-align: left; }
+.weak-list li button:hover,
+.weak-list li button.is-selected { background: var(--c-navy); }
+.weak-list li button.is-selected { border-left: 3px solid var(--c-sun); padding-left: 7px; }
+.weak-rank { display: inline-grid; width: 25px; height: 25px; flex: 0 0 25px; place-items: center; border: 1px solid var(--c-gold); color: var(--c-pale); font: 12px var(--f-mono); }
+.weak-list__main { display: grid; flex: 1; gap: 2px; min-width: 0; }
+.weak-list__main strong { overflow: hidden; color: var(--c-white); font-size: 13px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
+.weak-list__main small { color: var(--c-pale); font: 11px var(--f-mono); }
+.weak-list .relay-money { color: var(--c-sun); font: 11px var(--f-mono); white-space: nowrap; }
+.weak-exposed { width: 8px; height: 8px; border-radius: 50%; background: var(--c-sun); }
+.weak-list__footnote { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--hair); color: var(--c-cream); font-size: 11px; }
+.weak-drawing { min-width: 0; padding: 16px; }
+.weak-drawing__header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--hair); }
+.weak-drawing__header h2 { margin: 3px 0 0; color: var(--c-white); font: 700 24px var(--f-display); text-transform: uppercase; }
+.weak-legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--c-cream); font: 11px var(--f-mono); }
+.weak-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.weak-legend i { width: 10px; height: 10px; border: 1px solid var(--c-sun); }
+.weak-legend__spof { background: var(--c-sun); }
+.weak-legend__alt { border-color: var(--c-sky) !important; background: var(--c-sky); }
+.weak-graph-scroll { max-height: min(68vh, 760px); overflow: auto; margin-top: 10px; border: 1px solid var(--c-cream-12); background-color: var(--c-deep); background-image: linear-gradient(var(--c-cream-12) 1px, transparent 1px), linear-gradient(90deg, var(--c-cream-12) 1px, transparent 1px); background-size: 24px 24px; }
+.weak-graph { display: block; width: 100%; min-width: 900px; }
+.weak-graph__column { fill: var(--c-pale); font: 11px var(--f-mono); letter-spacing: 0.1em; }
+.weak-graph__edge { fill: none; stroke: var(--c-cream-24); stroke-width: 1.2; transition: opacity var(--t-std) var(--ease-snap), stroke var(--t-std) var(--ease-snap); }
+.weak-graph__edge.is-alternative { stroke: var(--c-sky); stroke-dasharray: 4 4; }
+.weak-graph__edge.is-broken { stroke: var(--c-sun); stroke-width: 2.2; stroke-dasharray: 5 4; }
+.weak-graph__node { cursor: default; transition: opacity var(--t-std) var(--ease-snap); }
+.weak-graph__node rect { fill: var(--c-midnight); stroke: var(--c-cream-24); stroke-width: 1; }
+.weak-graph__node text { fill: var(--c-cream); font: 11px var(--f-mono); pointer-events: none; }
+.weak-graph__node--order rect { stroke: var(--c-pale); }
+.weak-graph__node--step rect { stroke: var(--c-cream-24); }
+.weak-graph__node--machine rect,
+.weak-graph__node--vendor rect,
+.weak-graph__node--supplier rect { stroke: var(--c-sky); }
+.weak-graph__node.is-spof rect { fill: var(--c-sun); stroke: var(--c-sun); }
+.weak-graph__node.is-spof text { fill: var(--c-deep); font-weight: 600; }
+.weak-graph__node.is-dimmed { opacity: 0.25; }
+.weak-graph__node.is-broken rect { fill: url(#weak-hatch); stroke: var(--c-sun); }
+.weak-graph__node.is-broken text { fill: var(--c-sun); font-weight: 600; }
+.weak-drawing__footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0 4px; border-top: 1px solid var(--hair); }
+.weak-selection { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 4px 10px; color: var(--c-cream); font-size: 12px; }
+.weak-selection > span:last-child { grid-column: 2; color: var(--c-pale); font: 11px var(--f-mono); }
+.weak-selection .relay-money { color: var(--c-sun); }
+.weak-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.weak-broken-orders { display: grid; gap: 8px; padding-top: 10px; border-top: 1px solid var(--c-cream-12); }
+.weak-broken-orders > div { display: flex; flex-wrap: wrap; gap: 7px; }
+.weak-broken-orders > div > span { color: var(--c-pale); font-size: 12px; }
+.weak-uncovered { grid-column: 1 / -1; padding: 16px; }
+.weak-uncovered p { margin: 8px 0; color: var(--c-pale); font-size: 12px; }
+.weak-uncovered ul { display: grid; gap: 6px; margin-bottom: 0; color: var(--c-cream); font: 11px var(--f-mono); }
+.weak-error { display: grid; justify-items: start; gap: 12px; padding: 20px; }
+.weak-error p { margin: 0; color: var(--c-pale); }
+
+@media (max-width: 900px) {
+  .weak-layout { grid-template-columns: 1fr; }
+  .weak-uncovered { grid-column: auto; }
+  .weak-list ol { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 14px; }
+}
+
+@media (max-width: 760px) {
+  .weak-page { width: min(100% - 24px, 700px); gap: 12px; padding-top: 18px; }
+  .weak-heading { align-items: start; flex-direction: column; }
+  .weak-list ol { grid-template-columns: 1fr; }
+  .weak-drawing { padding: 12px; }
+  .weak-drawing__header { align-items: start; flex-direction: column; }
+  .weak-drawing__footer { align-items: start; flex-direction: column; }
+  .weak-actions { width: 100%; }
+  .weak-actions .relay-button { flex: 1; }
+}

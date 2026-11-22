@@ -1,0 +1,64 @@
+﻿{
+    "clusters":  [
+                     "cl_ambattur",
+                     "cl_cbe",
+                     "cl_guindy",
+                     "cl_hosur",
+                     "cl_oragadam",
+                     "cl_peenya"
+                 ],
+    "grids":  [
+                  "grid_blr",
+                  "grid_cbe",
+                  "grid_chennai_metro",
+                  "grid_hosur",
+                  "grid_kanchi_south"
+              ],
+    "sites":  [
+                  {
+                      "id":  "fac_owner",
+                      "name":  "Sample Precision Components",
+                      "role":  "OWNER"
+                  },
+                  {
+                      "id":  "fac_amb_nb",
+                      "name":  "Sample Precision Works (Ambattur)",
+                      "role":  "PARTNER"
+                  },
+                  {
+                      "id":  "fac_guindy",
+                      "name":  "Sample Machining (Guindy)",
+                      "role":  "PARTNER"
+                  },
+                  {
+                      "id":  "fac_oragadam",
+                      "name":  "Sample Components (Oragadam)",
+                      "role":  "PARTNER"
+                  },
+                  {
+                      "id":  "fac_hosur",
+                      "name":  "Sample Engineering (Hosur)",
+                      "role":  "PARTNER"
+                  },
+                  {
+                      "id":  "fac_peenya",
+                      "name":  "Sample Works (Peenya, Bengaluru)",
+                      "role":  "PARTNER"
+                  },
+                  {
+                      "id":  "fac_cbe",
+                      "name":  "Sample Tools (Coimbatore)",
+                      "role":  "PARTNER"
+                  },
+                  {
+                      "id":  "ven_heat",
+                      "name":  "Sample Heat Treat Works",
+                      "role":  null
+                  },
+                  {
+                      "id":  "sup_steel",
+                      "name":  "Sample Steels (Ambattur)",
+                      "role":  null
+                  }
+              ]
+}

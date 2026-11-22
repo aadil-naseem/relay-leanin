@@ -1,0 +1,88 @@
+.whatif-page { display: grid; gap: 16px; width: min(100% - 40px, 1680px); margin: 0 auto; padding: 24px 0 72px; }
+.whatif-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
+.whatif-heading h1 { margin: 4px 0 0; color: var(--c-white); font: 800 clamp(34px, 4vw, 54px)/0.9 var(--f-display); text-transform: uppercase; }
+.whatif-workspace { display: grid; grid-template-columns: minmax(260px, 0.75fr) minmax(0, 2fr); align-items: start; gap: 14px; }
+.whatif-scenario { display: grid; align-content: start; gap: 14px; padding: 18px; }
+.whatif-scenario h2,
+.whatif-empty h2,
+.whatif-shift__heading h2,
+.whatif-summary h2,
+.whatif-trace h2 { margin: 3px 0 0; color: var(--c-white); font: 700 23px/1.05 var(--f-display); text-transform: uppercase; }
+.whatif-hazards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
+.whatif-hazards button { display: grid; min-height: 60px; place-content: center; gap: 4px; border: 1px solid var(--hair); color: var(--c-cream); background: var(--c-deep); cursor: pointer; }
+.whatif-hazards button > span { color: var(--c-sky); font: 20px var(--f-mono); }
+.whatif-hazards button small { color: var(--c-pale); font-size: 10px; }
+.whatif-hazards button.is-selected { border-color: var(--c-sun); background: var(--c-ocean); }
+.whatif-hazards button.is-selected > span { color: var(--c-sun); }
+.whatif-label { margin-bottom: -9px; color: var(--c-pale); font: 11px var(--f-mono); }
+.whatif-scenario select { min-height: 38px; padding: 7px 9px; border: 1px solid var(--hair); border-radius: 0; color: var(--c-cream); background: var(--c-deep); }
+.whatif-options { display: grid; max-height: 180px; gap: 2px; overflow: auto; padding: 5px 0; }
+.whatif-options label { display: flex; align-items: center; gap: 8px; padding: 5px; color: var(--c-cream); font-size: 11px; }
+.whatif-options input { accent-color: var(--c-sun); }
+.whatif-current-alert { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.whatif-current-alert > .f0-kicker { width: 100%; }
+.whatif-current-alert p { color: var(--c-pale); font-size: 12px; }
+.whatif-zone-map { position: relative; height: 170px; border: 1px solid var(--hair); background: var(--c-deep); }
+.whatif-zone-map .leaflet-container { height: 100%; color: var(--c-cream); background: var(--c-deep); font: 10px var(--f-mono); }
+.whatif-zone-map .leaflet-tile-pane { filter: grayscale(1) invert(1) brightness(0.55) contrast(1.1); }
+.whatif-zone-map .leaflet-control-attribution { color: var(--c-cream); background: var(--c-deep-80); }
+.whatif-zone-map .leaflet-control-attribution a { color: var(--c-sky); }
+.whatif-zone-map .whatif-zone { stroke: var(--c-gold); fill: var(--c-sun); fill-opacity: 0.15; stroke-width: 2; stroke-dasharray: 5 4; cursor: pointer; }
+.whatif-zone-map .whatif-zone.is-selected { stroke: var(--c-sun); fill-opacity: 0.32; stroke-width: 3; }
+.whatif-zone-map > span { position: absolute; z-index: 500; right: 4px; bottom: 3px; padding: 2px 4px; color: var(--c-pale); background: var(--c-deep-80); font: 10px var(--f-mono); }
+.whatif-results,
+.whatif-result-stack { display: grid; align-content: start; gap: 14px; min-width: 0; }
+.whatif-empty { display: grid; justify-items: start; gap: 12px; min-height: 300px; align-content: center; padding: 24px; }
+.whatif-empty p { max-width: 520px; color: var(--c-pale); }
+.whatif-summary { display: grid; gap: 16px; padding: 18px; }
+.whatif-summary__headline { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.whatif-summary__headline h2 { max-width: 900px; font-size: 29px; line-height: 1.08; }
+.whatif-summary__metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--hair); }
+.whatif-summary__metrics > div { display: grid; align-content: center; gap: 8px; min-height: 74px; padding: 10px 12px; border-right: 1px solid var(--c-cream-12); }
+.whatif-summary__metrics > div:last-child { border-right: 0; }
+.whatif-summary__metrics span { color: var(--c-pale); font-size: 11px; }
+.whatif-summary__metrics strong { color: var(--c-sun); font: 500 21px var(--f-mono); }
+.whatif-shift { min-width: 0; padding: 16px; }
+.whatif-shift__heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+.whatif-chart-scroll { max-width: 100%; overflow: auto; }
+.whatif-chart { display: block; width: 100%; min-width: 820px; height: auto; }
+.whatif-chart__axis-label,
+.whatif-chart__tick,
+.whatif-chart__detail,
+.whatif-chart__due-label,
+.whatif-chart__downtime-label { fill: var(--c-pale); font: 10px var(--f-mono); }
+.whatif-chart__gridline { stroke: var(--c-cream-12); stroke-width: 1; }
+.whatif-chart__due { stroke: var(--c-sun); stroke-width: 2; stroke-dasharray: 4 3; }
+.whatif-chart__due-label { fill: var(--c-sun); }
+.whatif-chart__downtime-label { fill: var(--c-pale); }
+.whatif-chart__baseline { fill: none; stroke: var(--c-cream); stroke-width: 2; }
+.whatif-chart__bar { fill: var(--c-sun); }
+.whatif-chart__bar--late { fill: var(--c-sun); }
+.whatif-chart__overflow path { fill: var(--c-sun); }
+.whatif-chart__overflow text { fill: var(--c-sun); font: 10px var(--f-mono); }
+.whatif-chart__order { fill: var(--c-cream); font: 11px var(--f-mono); }
+.whatif-order-list { display: grid; min-width: 820px; margin-top: 8px; }
+.whatif-order-list article { display: grid; grid-template-columns: auto auto 1fr auto auto 1fr auto; align-items: center; gap: 10px; min-height: 48px; padding: 6px 3px; border-top: 1px solid var(--c-cream-12); color: var(--c-cream); font-size: 11px; }
+.whatif-order-list > article > span:nth-child(3) { color: var(--c-pale); }
+.whatif-order-list__backup { color: var(--c-cream); }
+.whatif-order-list button { border: 0; color: var(--c-sky); background: transparent; cursor: pointer; font: 11px var(--f-mono); white-space: nowrap; }
+.whatif-overlay { position: fixed; z-index: 20; inset: 0; display: flex; justify-content: flex-end; background: var(--c-deep-80); }
+.whatif-trace { width: min(680px, 100vw); height: 100%; overflow: auto; padding: 24px; border-left: 1px solid var(--hair); background: var(--panel); }
+.whatif-trace header { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--hair); }
+.whatif-trace h2 { font-size: 28px; }
+
+@media (max-width: 1000px) {
+  .whatif-workspace { grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.5fr); }
+  .whatif-summary__metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .whatif-summary__metrics > div:nth-child(2) { border-right: 0; }
+}
+
+@media (max-width: 760px) {
+  .whatif-page { width: min(100% - 24px, 700px); gap: 12px; padding-top: 18px; }
+  .whatif-heading { align-items: start; flex-direction: column; }
+  .whatif-workspace { grid-template-columns: 1fr; }
+  .whatif-scenario { padding: 14px; }
+  .whatif-summary__headline { align-items: start; flex-direction: column; }
+  .whatif-summary__headline h2 { font-size: 23px; }
+  .whatif-summary__metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

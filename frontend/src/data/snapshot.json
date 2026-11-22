@@ -1,0 +1,3106 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-11-14T23:08:10Z",
+  "source": "verified replay capture · isolated demo database",
+  "data_label": "SIMULATED SAMPLE",
+  "health": {
+    "status": "ok",
+    "app_env": "dev",
+    "db": "ok",
+    "weather_mode": "replay",
+    "vision_chain": [
+      {
+        "provider": "cache",
+        "configured": true
+      },
+      {
+        "provider": "gemini",
+        "configured": true
+      }
+    ],
+    "time_utc": "2026-11-14T23:08:10.941430+00:00"
+  },
+  "demo_state": {
+    "weather_mode": "replay",
+    "replay_event": "michaung_2023",
+    "data_label": "SIMULATED SAMPLE"
+  },
+  "dashboard": {
+    "factory": {
+      "id": "fac_owner",
+      "name": "Sample Precision Components",
+      "role": "OWNER",
+      "cluster_id": "cl_ambattur",
+      "hazard_zone_id": "zone_ambattur_north",
+      "grid_id": "grid_chennai_metro"
+    },
+    "data_label": "SIMULATED SAMPLE",
+    "weather": {
+      "mode": "replay",
+      "source": "replay",
+      "degraded": false,
+      "attribution": "Weather data by Open-Meteo.com"
+    },
+    "readiness": {
+      "headline": {
+        "window": 48,
+        "score": 50.0,
+        "weighted": 53.9
+      },
+      "windows": {
+        "24": 0.0,
+        "48": 53.9,
+        "72": 53.9
+      }
+    },
+    "alert": {
+      "active": true,
+      "headline": "Heavy rain in 23 h: 3 site(s) in the storm footprint at 96/100 (SEVERE) - risk indicator, not a flood model",
+      "onset_in_hours": 23.0,
+      "stress_test_id": "str_auto_ff38b47a8b5aba43_fac_owner",
+      "cta": "START_RECOVERY"
+    },
+    "spof_top": [
+      {
+        "rank": 1,
+        "resource_id": "ven_heat",
+        "kind": "vendor",
+        "name": "Sample Heat Treat Works",
+        "orders_broken": [
+          "ord_101",
+          "ord_106"
+        ],
+        "steps_broken": [
+          "st_prt_a_2",
+          "st_prt_f_3"
+        ],
+        "revenue_at_risk_inr": 1900000.0,
+        "exposed": true
+      },
+      {
+        "rank": 2,
+        "resource_id": "mch_own_grind_1",
+        "kind": "machine",
+        "name": "Cylindrical grinder 1",
+        "orders_broken": [
+          "ord_101"
+        ],
+        "steps_broken": [
+          "st_prt_a_3"
+        ],
+        "revenue_at_risk_inr": 1200000.0,
+        "exposed": true
+      },
+      {
+        "rank": 3,
+        "resource_id": "sup_steel",
+        "kind": "supplier",
+        "name": "Sample Steels (Ambattur)",
+        "orders_broken": [
+          "ord_101"
+        ],
+        "steps_broken": [],
+        "revenue_at_risk_inr": 1200000.0,
+        "exposed": true
+      }
+    ],
+    "exposure_summary": {
+      "owner_site_risk": 96,
+      "owner_risk_level": "SEVERE",
+      "owner_max24_mm": 242.3,
+      "owner_onset_in_hours": 23,
+      "owner_wet_spell_hours": 21,
+      "isolation": false,
+      "routes": [
+        {
+          "route_id": "rt_fac_owner_exit_madhavaram",
+          "exit_id": "exit_madhavaram",
+          "route_risk": 43,
+          "exposed": false
+        },
+        {
+          "route_id": "rt_fac_owner_exit_padi",
+          "exit_id": "exit_padi",
+          "route_risk": 25,
+          "exposed": false
+        },
+        {
+          "route_id": "rt_fac_owner_exit_villivakkam",
+          "exit_id": "exit_villivakkam",
+          "route_risk": 45,
+          "exposed": false
+        }
+      ],
+      "site_risks": {
+        "fac_amb_nb": 86,
+        "fac_cbe": 1,
+        "fac_guindy": 67,
+        "fac_hosur": 0,
+        "fac_oragadam": 48,
+        "fac_owner": 96,
+        "fac_peenya": 1,
+        "sup_steel": 69,
+        "ven_heat": 74
+      }
+    },
+    "stale_partners": 1
+  },
+  "stress_test": {
+    "id": "str_auto_ff38b47a8b5aba43_fac_owner",
+    "trigger": "AUTO",
+    "hazard": "FLOOD",
+    "factory_id": "fac_owner",
+    "affected_sites": [
+      "fac_owner",
+      "sup_steel",
+      "ven_heat"
+    ],
+    "orders": [
+      {
+        "order_id": "ord_104",
+        "part_id": "prt_d",
+        "state": "LATE",
+        "due_at": "2026-11-16T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-19T19:14:10.629303Z",
+        "baseline_finish_at": "2026-11-15T22:14:10.629303Z",
+        "days_late": 2.84,
+        "value_inr": 180000.0,
+        "fallback_level": "NONE",
+        "best_backup": null
+      },
+      {
+        "order_id": "ord_107",
+        "part_id": "prt_b",
+        "state": "LATE",
+        "due_at": "2026-11-17T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-20T04:50:10.629303Z",
+        "baseline_finish_at": "2026-11-16T07:50:10.629303Z",
+        "days_late": 2.24,
+        "value_inr": 420000.0,
+        "fallback_level": "READY",
+        "best_backup": "fac_oragadam"
+      },
+      {
+        "order_id": "ord_101",
+        "part_id": "prt_a",
+        "state": "LATE",
+        "due_at": "2026-11-18T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-23T00:23:10.629303Z",
+        "baseline_finish_at": "2026-11-19T03:23:10.629303Z",
+        "days_late": 4.05,
+        "value_inr": 1200000.0,
+        "fallback_level": "NONE",
+        "best_backup": null
+      },
+      {
+        "order_id": "ord_102",
+        "part_id": "prt_b",
+        "state": "LATE",
+        "due_at": "2026-11-19T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-21T10:50:10.629303Z",
+        "baseline_finish_at": "2026-11-17T13:50:10.629303Z",
+        "days_late": 1.49,
+        "value_inr": 850000.0,
+        "fallback_level": "READY",
+        "best_backup": "fac_oragadam"
+      },
+      {
+        "order_id": "ord_103",
+        "part_id": "prt_c",
+        "state": "AT_RISK",
+        "due_at": "2026-11-20T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-20T21:11:10.629303Z",
+        "baseline_finish_at": "2026-11-17T00:11:10.629303Z",
+        "days_late": null,
+        "value_inr": 600000.0,
+        "fallback_level": "READY",
+        "best_backup": "fac_oragadam"
+      },
+      {
+        "order_id": "ord_105",
+        "part_id": "prt_e",
+        "state": "ON_TRACK",
+        "due_at": "2026-11-21T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-15T22:05:10.629303Z",
+        "baseline_finish_at": "2026-11-15T22:05:10.629303Z",
+        "days_late": null,
+        "value_inr": 150000.0,
+        "fallback_level": "NONE",
+        "best_backup": null
+      },
+      {
+        "order_id": "ord_106",
+        "part_id": "prt_f",
+        "state": "AT_RISK",
+        "due_at": "2026-11-22T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-22T11:02:10.629303Z",
+        "baseline_finish_at": "2026-11-18T14:02:10.629303Z",
+        "days_late": null,
+        "value_inr": 700000.0,
+        "fallback_level": "POTENTIAL_ONLY",
+        "best_backup": "fac_hosur"
+      },
+      {
+        "order_id": "ord_108",
+        "part_id": "prt_c",
+        "state": "ON_TRACK",
+        "due_at": "2026-11-26T23:08:10.565770Z",
+        "stressed_finish_at": "2026-11-21T14:12:40.629303Z",
+        "baseline_finish_at": "2026-11-17T17:12:40.629303Z",
+        "days_late": null,
+        "value_inr": 350000.0,
+        "fallback_level": "READY",
+        "best_backup": "fac_oragadam"
+      }
+    ],
+    "summary": {
+      "orders_at_risk": 6,
+      "revenue_exposed_inr": 3950000.0,
+      "orders_no_fallback": 2,
+      "orders_no_ready_fallback": 3
+    },
+    "headline": "Heavy rain in 23h: 6 order(s) at risk, ₹39.5 L exposed, 2 order(s) have no fallback",
+    "params": {
+      "factory_id": "fac_owner",
+      "hazard": "FLOOD",
+      "scope": {
+        "type": "exposure_alert",
+        "ids": [
+          "fac_owner",
+          "sup_steel",
+          "ven_heat"
+        ]
+      },
+      "start_in_hours": 23.0,
+      "duration_hours": 93.0,
+      "forecast_hash": "ff38b47a8b5aba4347914ff5505a49e5"
+    },
+    "exposure_snapshot_id": "exp_ff38b47a8b5aba43_fac_owner",
+    "created_at": "2026-11-14T23:08:10.629303Z",
+    "trace": [
+      {
+        "step": "auto_trigger",
+        "detail": "Auto stress test triggered by exposure alert (level=SEVERE, onset=23.0h).",
+        "inputs": {
+          "factory_id": "fac_owner",
+          "forecast_hash": "ff38b47a8b5aba4347914ff5505a49e5",
+          "onset_in_hours": 23.0,
+          "duration_hours": 93.0,
+          "affected_sites": [
+            "fac_owner",
+            "sup_steel",
+            "ven_heat"
+          ]
+        },
+        "output": null
+      }
+    ]
+  },
+  "spof": {
+    "factory_id": "fac_owner",
+    "items": [
+      {
+        "rank": 1,
+        "resource_id": "ven_heat",
+        "kind": "vendor",
+        "name": "Sample Heat Treat Works",
+        "orders_broken": [
+          "ord_101",
+          "ord_106"
+        ],
+        "steps_broken": [
+          "st_prt_a_2",
+          "st_prt_f_3"
+        ],
+        "revenue_at_risk_inr": 1900000.0,
+        "exposed": true
+      },
+      {
+        "rank": 2,
+        "resource_id": "mch_own_grind_1",
+        "kind": "machine",
+        "name": "Cylindrical grinder 1",
+        "orders_broken": [
+          "ord_101"
+        ],
+        "steps_broken": [
+          "st_prt_a_3"
+        ],
+        "revenue_at_risk_inr": 1200000.0,
+        "exposed": true
+      },
+      {
+        "rank": 3,
+        "resource_id": "sup_steel",
+        "kind": "supplier",
+        "name": "Sample Steels (Ambattur)",
+        "orders_broken": [
+          "ord_101"
+        ],
+        "steps_broken": [],
+        "revenue_at_risk_inr": 1200000.0,
+        "exposed": true
+      },
+      {
+        "rank": 4,
+        "resource_id": "mch_own_drill_1",
+        "kind": "machine",
+        "name": "Drill/Tap centre 1",
+        "orders_broken": [
+          "ord_103",
+          "ord_108"
+        ],
+        "steps_broken": [
+          "st_prt_c_2"
+        ],
+        "revenue_at_risk_inr": 950000.0,
+        "exposed": true
+      }
+    ],
+    "nodes": [
+      {
+        "id": "mch_own_drill_1",
+        "kind": "machine",
+        "name": "Drill/Tap centre 1",
+        "process": "DRILL_TAP",
+        "exposed": true
+      },
+      {
+        "id": "mch_own_grind_1",
+        "kind": "machine",
+        "name": "Cylindrical grinder 1",
+        "process": "GRIND_CYL",
+        "exposed": true
+      },
+      {
+        "id": "mch_own_mill_1",
+        "kind": "machine",
+        "name": "VMC 1",
+        "process": "MILL",
+        "exposed": true
+      },
+      {
+        "id": "mch_own_mill_2",
+        "kind": "machine",
+        "name": "VMC 2",
+        "process": "MILL",
+        "exposed": true
+      },
+      {
+        "id": "mch_own_turn_1",
+        "kind": "machine",
+        "name": "Lathe 1",
+        "process": "TURN",
+        "exposed": true
+      },
+      {
+        "id": "mch_own_turn_2",
+        "kind": "machine",
+        "name": "Lathe 2",
+        "process": "TURN",
+        "exposed": true
+      },
+      {
+        "id": "mch_own_turn_3",
+        "kind": "machine",
+        "name": "Lathe 3",
+        "process": "TURN",
+        "exposed": true
+      },
+      {
+        "id": "part:prt_a",
+        "kind": "part",
+        "name": "Hydraulic piston rod",
+        "process": null,
+        "exposed": false
+      },
+      {
+        "id": "part:prt_b",
+        "kind": "part",
+        "name": "Pump shaft",
+        "process": null,
+        "exposed": false
+      },
+      {
+        "id": "part:prt_c",
+        "kind": "part",
+        "name": "Valve body flange",
+        "process": null,
+        "exposed": false
+      },
+      {
+        "id": "part:prt_d",
+        "kind": "part",
+        "name": "Bracket",
+        "process": null,
+        "exposed": false
+      },
+      {
+        "id": "part:prt_e",
+        "kind": "part",
+        "name": "Bushing",
+        "process": null,
+        "exposed": false
+      },
+      {
+        "id": "part:prt_f",
+        "kind": "part",
+        "name": "Gear blank",
+        "process": null,
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_a_1",
+        "kind": "step",
+        "name": "TURN (seq 1)",
+        "process": "TURN",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_a_2",
+        "kind": "step",
+        "name": "HEAT_TREAT (seq 2)",
+        "process": "HEAT_TREAT",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_a_3",
+        "kind": "step",
+        "name": "GRIND_CYL (seq 3)",
+        "process": "GRIND_CYL",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_b_1",
+        "kind": "step",
+        "name": "TURN (seq 1)",
+        "process": "TURN",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_b_2",
+        "kind": "step",
+        "name": "MILL (seq 2)",
+        "process": "MILL",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_c_1",
+        "kind": "step",
+        "name": "MILL (seq 1)",
+        "process": "MILL",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_c_2",
+        "kind": "step",
+        "name": "DRILL_TAP (seq 2)",
+        "process": "DRILL_TAP",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_d_1",
+        "kind": "step",
+        "name": "MILL (seq 1)",
+        "process": "MILL",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_e_1",
+        "kind": "step",
+        "name": "TURN (seq 1)",
+        "process": "TURN",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_f_1",
+        "kind": "step",
+        "name": "TURN (seq 1)",
+        "process": "TURN",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_f_2",
+        "kind": "step",
+        "name": "MILL (seq 2)",
+        "process": "MILL",
+        "exposed": false
+      },
+      {
+        "id": "step:st_prt_f_3",
+        "kind": "step",
+        "name": "HEAT_TREAT (seq 3)",
+        "process": "HEAT_TREAT",
+        "exposed": false
+      },
+      {
+        "id": "sup_steel",
+        "kind": "supplier",
+        "name": "Sample Steels (Ambattur)",
+        "process": null,
+        "exposed": true
+      },
+      {
+        "id": "ven_heat",
+        "kind": "vendor",
+        "name": "Sample Heat Treat Works",
+        "process": "HEAT_TREAT",
+        "exposed": true
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "part:prt_a",
+        "to_node": "step:st_prt_a_1",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_a",
+        "to_node": "step:st_prt_a_2",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_a",
+        "to_node": "step:st_prt_a_3",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_a",
+        "to_node": "sup_steel",
+        "relation": "needs_material"
+      },
+      {
+        "from_node": "part:prt_b",
+        "to_node": "step:st_prt_b_1",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_b",
+        "to_node": "step:st_prt_b_2",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_c",
+        "to_node": "step:st_prt_c_1",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_c",
+        "to_node": "step:st_prt_c_2",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_d",
+        "to_node": "step:st_prt_d_1",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_e",
+        "to_node": "step:st_prt_e_1",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_f",
+        "to_node": "step:st_prt_f_1",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_f",
+        "to_node": "step:st_prt_f_2",
+        "relation": "needs"
+      },
+      {
+        "from_node": "part:prt_f",
+        "to_node": "step:st_prt_f_3",
+        "relation": "needs"
+      },
+      {
+        "from_node": "step:st_prt_a_1",
+        "to_node": "mch_own_turn_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_a_1",
+        "to_node": "mch_own_turn_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_a_2",
+        "to_node": "ven_heat",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_a_3",
+        "to_node": "mch_own_grind_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_b_1",
+        "to_node": "mch_own_turn_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_b_1",
+        "to_node": "mch_own_turn_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_b_2",
+        "to_node": "mch_own_mill_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_b_2",
+        "to_node": "mch_own_mill_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_c_1",
+        "to_node": "mch_own_mill_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_c_1",
+        "to_node": "mch_own_mill_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_c_2",
+        "to_node": "mch_own_drill_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_d_1",
+        "to_node": "mch_own_mill_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_d_1",
+        "to_node": "mch_own_mill_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_e_1",
+        "to_node": "mch_own_turn_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_e_1",
+        "to_node": "mch_own_turn_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_e_1",
+        "to_node": "mch_own_turn_3",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_f_1",
+        "to_node": "mch_own_turn_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_f_1",
+        "to_node": "mch_own_turn_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_f_2",
+        "to_node": "mch_own_mill_1",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_f_2",
+        "to_node": "mch_own_mill_2",
+        "relation": "can_serve"
+      },
+      {
+        "from_node": "step:st_prt_f_3",
+        "to_node": "ven_heat",
+        "relation": "can_serve"
+      }
+    ],
+    "uncovered_requirements": [
+      "ord_102 (Pump shaft): material EN8 has no approved server",
+      "ord_103 (Valve body flange): material SS304 has no approved server",
+      "ord_104 (Bracket): material Al6061 has no approved server",
+      "ord_105 (Bushing): material Brass IS 319 has no approved server",
+      "ord_106 (Gear blank): material EN8 has no approved server",
+      "ord_107 (Pump shaft): material EN8 has no approved server",
+      "ord_108 (Valve body flange): material SS304 has no approved server"
+    ],
+    "total_orders": 8,
+    "trace": [
+      {
+        "step": "load_world",
+        "detail": "8 active orders, 9 resources (7 machines, 1 vendors, 1 suppliers).",
+        "inputs": {
+          "factory_id": "fac_owner"
+        },
+        "output": {
+          "orders": 8,
+          "exposure_flag": "zone membership (live exposure joined in Phase 13)",
+          "exposed_sites": [
+            "fac_owner",
+            "sup_steel",
+            "ven_heat"
+          ]
+        }
+      },
+      {
+        "step": "coverage",
+        "detail": "For each requirement (every step + the material), the set of resources that can serve it was computed; tolerance and envelope filters applied for machines.",
+        "inputs": null,
+        "output": {
+          "uncovered_requirements": [
+            "ord_102 (Pump shaft): material EN8 has no approved server",
+            "ord_103 (Valve body flange): material SS304 has no approved server",
+            "ord_104 (Bracket): material Al6061 has no approved server",
+            "ord_105 (Bushing): material Brass IS 319 has no approved server",
+            "ord_106 (Gear blank): material EN8 has no approved server",
+            "ord_107 (Pump shaft): material EN8 has no approved server",
+            "ord_108 (Valve body flange): material SS304 has no approved server"
+          ],
+          "unavailable_resources_excluded": []
+        }
+      },
+      {
+        "step": "remove_resource",
+        "detail": "Remove Sample Heat Treat Works (vendor) -> 2 order(s) lose their only server: ord_101, ord_106.",
+        "inputs": {
+          "resource_id": "ven_heat"
+        },
+        "output": {
+          "revenue_at_risk_inr": 1900000.0,
+          "exposed": true
+        }
+      },
+      {
+        "step": "remove_resource",
+        "detail": "Remove Cylindrical grinder 1 (machine) -> 1 order(s) lose their only server: ord_101.",
+        "inputs": {
+          "resource_id": "mch_own_grind_1"
+        },
+        "output": {
+          "revenue_at_risk_inr": 1200000.0,
+          "exposed": true
+        }
+      },
+      {
+        "step": "remove_resource",
+        "detail": "Remove Sample Steels (Ambattur) (supplier) -> 1 order(s) lose their only server: ord_101.",
+        "inputs": {
+          "resource_id": "sup_steel"
+        },
+        "output": {
+          "revenue_at_risk_inr": 1200000.0,
+          "exposed": true
+        }
+      },
+      {
+        "step": "remove_resource",
+        "detail": "Remove Drill/Tap centre 1 (machine) -> 2 order(s) lose their only server: ord_103, ord_108.",
+        "inputs": {
+          "resource_id": "mch_own_drill_1"
+        },
+        "output": {
+          "revenue_at_risk_inr": 950000.0,
+          "exposed": true
+        }
+      },
+      {
+        "step": "rank",
+        "detail": "Ranked by revenue at risk desc, then order count (section 7.1).",
+        "inputs": null,
+        "output": {
+          "top": [
+            "ven_heat",
+            "mch_own_grind_1",
+            "sup_steel",
+            "mch_own_drill_1"
+          ],
+          "spof_count": 4
+        }
+      }
+    ]
+  },
+  "exposure_map": {
+    "mode": "replay",
+    "weather": {
+      "mode": "replay",
+      "source": "replay",
+      "degraded": false,
+      "attribution": "Weather data by Open-Meteo.com"
+    },
+    "points": [
+      {
+        "site_id": "fac_amb_nb",
+        "role": "PARTNER",
+        "name": "Sample Precision Works (Ambattur)",
+        "lat": 13.098,
+        "lon": 80.158,
+        "site_risk": 86,
+        "risk_level": "SEVERE",
+        "isolation": false
+      },
+      {
+        "site_id": "fac_cbe",
+        "role": "PARTNER",
+        "name": "Sample Tools (Coimbatore)",
+        "lat": 10.95,
+        "lon": 76.97,
+        "site_risk": 1,
+        "risk_level": "LOW",
+        "isolation": false
+      },
+      {
+        "site_id": "fac_guindy",
+        "role": "PARTNER",
+        "name": "Sample Machining (Guindy)",
+        "lat": 13.01,
+        "lon": 80.212,
+        "site_risk": 67,
+        "risk_level": "HIGH",
+        "isolation": false
+      },
+      {
+        "site_id": "fac_hosur",
+        "role": "PARTNER",
+        "name": "Sample Engineering (Hosur)",
+        "lat": 12.74,
+        "lon": 77.83,
+        "site_risk": 0,
+        "risk_level": "LOW",
+        "isolation": false
+      },
+      {
+        "site_id": "fac_oragadam",
+        "role": "PARTNER",
+        "name": "Sample Components (Oragadam)",
+        "lat": 12.842,
+        "lon": 79.952,
+        "site_risk": 48,
+        "risk_level": "MODERATE",
+        "isolation": false
+      },
+      {
+        "site_id": "fac_owner",
+        "role": "OWNER",
+        "name": "Sample Precision Components",
+        "lat": 13.1,
+        "lon": 80.155,
+        "site_risk": 96,
+        "risk_level": "SEVERE",
+        "isolation": false
+      },
+      {
+        "site_id": "fac_peenya",
+        "role": "PARTNER",
+        "name": "Sample Works (Peenya, Bengaluru)",
+        "lat": 13.028,
+        "lon": 77.52,
+        "site_risk": 1,
+        "risk_level": "LOW",
+        "isolation": false
+      },
+      {
+        "site_id": "sup_steel",
+        "role": "SUPPLIER",
+        "name": "Sample Steels (Ambattur)",
+        "lat": 13.095,
+        "lon": 80.16,
+        "site_risk": 69,
+        "risk_level": "HIGH",
+        "isolation": false
+      },
+      {
+        "site_id": "ven_heat",
+        "role": "VENDOR",
+        "name": "Sample Heat Treat Works",
+        "lat": 13.105,
+        "lon": 80.15,
+        "site_risk": 74,
+        "risk_level": "HIGH",
+        "isolation": false
+      }
+    ]
+  },
+  "owner_exposure": {
+    "factory_id": "fac_owner",
+    "computed_at": "2026-11-14T23:08:10.963549Z",
+    "weather": {
+      "mode": "replay",
+      "source": "replay",
+      "degraded": false,
+      "attribution": "Weather data by Open-Meteo.com"
+    },
+    "site": {
+      "site_id": "fac_owner",
+      "site_role": "OWNER",
+      "site_risk": 96,
+      "risk_level": "SEVERE",
+      "max24_mm": 242.3,
+      "peak3_mm": 55.9,
+      "hazard": 1.0,
+      "vulnerability": 0.9487,
+      "onset_in_hours": 23.0,
+      "wet_spell_hours": 21,
+      "isolation": false,
+      "drivers": [
+        "242 mm forecast in the heaviest 24 h (hazard 1.00)",
+        "56 mm in the heaviest 3 h - cloudburst intensity",
+        "4.7 m below the surrounding terrain",
+        "169 m from the nearest mapped water body",
+        "inside a curated historical-flood planning zone (not an official flood map)"
+      ]
+    },
+    "routes": [
+      {
+        "route_id": "rt_fac_owner_exit_madhavaram",
+        "exit_id": "exit_madhavaram",
+        "route_risk": 43,
+        "low_share": 0.408,
+        "underpass_count": 0,
+        "exposed": false
+      },
+      {
+        "route_id": "rt_fac_owner_exit_padi",
+        "exit_id": "exit_padi",
+        "route_risk": 25,
+        "low_share": 0.0,
+        "underpass_count": 0,
+        "exposed": false
+      },
+      {
+        "route_id": "rt_fac_owner_exit_villivakkam",
+        "exit_id": "exit_villivakkam",
+        "route_risk": 45,
+        "low_share": 0.108,
+        "underpass_count": 1,
+        "exposed": false
+      }
+    ],
+    "alert": {
+      "active": true,
+      "level": "SEVERE",
+      "onset_in_hours": 23.0,
+      "max_24h_mm": 242.3,
+      "affected_sites": [
+        "fac_owner",
+        "sup_steel",
+        "ven_heat"
+      ],
+      "headline": "Heavy rain in 23 h: 3 site(s) in the storm footprint at 96/100 (SEVERE) - risk indicator, not a flood model"
+    },
+    "trace": [
+      {
+        "step": "weather",
+        "detail": "Hourly precipitation for 9 sites (replay mode, source=replay).",
+        "inputs": {
+          "mode": "replay"
+        },
+        "output": {
+          "source": "replay",
+          "degraded": false,
+          "attribution": "Weather data by Open-Meteo.com",
+          "sites": 9
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Precision Components: 242 mm/24 h -> hazard 1.00; vulnerability 0.95 -> risk 96 (SEVERE).",
+        "inputs": {
+          "site_id": "fac_owner",
+          "max24_mm": 242.3,
+          "peak3_mm": 55.9,
+          "depression": 0.934,
+          "water_proximity": 0.8871,
+          "flood_history": 1.0
+        },
+        "output": {
+          "site_risk": 96,
+          "risk_level": "SEVERE"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Steels (Ambattur): 242 mm/24 h -> hazard 1.00; vulnerability 0.58 -> risk 69 (HIGH).",
+        "inputs": {
+          "site_id": "sup_steel",
+          "max24_mm": 242.3,
+          "peak3_mm": 55.9,
+          "depression": 0.0,
+          "water_proximity": 0.7299,
+          "flood_history": 1.0
+        },
+        "output": {
+          "site_risk": 69,
+          "risk_level": "HIGH"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Heat Treat Works: 242 mm/24 h -> hazard 1.00; vulnerability 0.65 -> risk 74 (HIGH).",
+        "inputs": {
+          "site_id": "ven_heat",
+          "max24_mm": 242.3,
+          "peak3_mm": 55.9,
+          "depression": 0.0,
+          "water_proximity": 0.9917,
+          "flood_history": 1.0
+        },
+        "output": {
+          "site_risk": 74,
+          "risk_level": "HIGH"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Precision Works (Ambattur): 242 mm/24 h -> hazard 1.00; vulnerability 0.82 -> risk 86 (SEVERE).",
+        "inputs": {
+          "site_id": "fac_amb_nb",
+          "max24_mm": 242.3,
+          "peak3_mm": 55.9,
+          "depression": 0.542,
+          "water_proximity": 0.9029,
+          "flood_history": 1.0
+        },
+        "output": {
+          "site_risk": 86,
+          "risk_level": "SEVERE"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Tools (Coimbatore): 1 mm/24 h -> hazard 0.01; vulnerability 0.27 -> risk 1 (LOW).",
+        "inputs": {
+          "site_id": "fac_cbe",
+          "max24_mm": 1.4,
+          "peak3_mm": 1.3,
+          "depression": 0.492,
+          "water_proximity": 0.3913,
+          "flood_history": 0.0
+        },
+        "output": {
+          "site_risk": 1,
+          "risk_level": "LOW"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Machining (Guindy): 219 mm/24 h -> hazard 1.00; vulnerability 0.56 -> risk 67 (HIGH).",
+        "inputs": {
+          "site_id": "fac_guindy",
+          "max24_mm": 218.9,
+          "peak3_mm": 46.5,
+          "depression": 0.0,
+          "water_proximity": 0.624,
+          "flood_history": 1.0
+        },
+        "output": {
+          "site_risk": 67,
+          "risk_level": "HIGH"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Engineering (Hosur): 0 mm/24 h -> hazard 0.00; vulnerability 0.13 -> risk 0 (LOW).",
+        "inputs": {
+          "site_id": "fac_hosur",
+          "max24_mm": 0.4,
+          "peak3_mm": 0.4,
+          "depression": 0.0,
+          "water_proximity": 0.5133,
+          "flood_history": 0.0
+        },
+        "output": {
+          "site_risk": 0,
+          "risk_level": "LOW"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Components (Oragadam): 181 mm/24 h -> hazard 0.95; vulnerability 0.35 -> risk 48 (MODERATE).",
+        "inputs": {
+          "site_id": "fac_oragadam",
+          "max24_mm": 180.7,
+          "peak3_mm": 56.3,
+          "depression": 0.6,
+          "water_proximity": 0.5447,
+          "flood_history": 0.0
+        },
+        "output": {
+          "site_risk": 48,
+          "risk_level": "MODERATE"
+        }
+      },
+      {
+        "step": "site_risk",
+        "detail": "Sample Works (Peenya, Bengaluru): 2 mm/24 h -> hazard 0.02; vulnerability 0.43 -> risk 1 (LOW).",
+        "inputs": {
+          "site_id": "fac_peenya",
+          "max24_mm": 2.5,
+          "peak3_mm": 2.1,
+          "depression": 0.508,
+          "water_proximity": 0.9975,
+          "flood_history": 0.0
+        },
+        "output": {
+          "site_risk": 1,
+          "risk_level": "LOW"
+        }
+      },
+      {
+        "step": "routes",
+        "detail": "3 access route(s) scored from low-elevation share and underpasses.",
+        "inputs": null,
+        "output": {
+          "routes": [
+            {
+              "route_id": "rt_fac_owner_exit_madhavaram",
+              "exit_id": "exit_madhavaram",
+              "route_risk": 43,
+              "exposed": false
+            },
+            {
+              "route_id": "rt_fac_owner_exit_padi",
+              "exit_id": "exit_padi",
+              "route_risk": 25,
+              "exposed": false
+            },
+            {
+              "route_id": "rt_fac_owner_exit_villivakkam",
+              "exit_id": "exit_villivakkam",
+              "route_risk": 45,
+              "exposed": false
+            }
+          ],
+          "isolation": false
+        }
+      },
+      {
+        "step": "alert",
+        "detail": "Alert raised: fac_owner, sup_steel, ven_heat at or above 50; peak fac_owner = 96 (SEVERE).",
+        "inputs": null,
+        "output": {
+          "active": true,
+          "level": "SEVERE",
+          "affected_sites": [
+            "fac_owner",
+            "sup_steel",
+            "ven_heat"
+          ],
+          "onset_in_hours": 23
+        }
+      }
+    ]
+  },
+  "readiness": {
+    "factory_id": "fac_owner",
+    "window_hours": 48,
+    "score": 50.0,
+    "weighted_score": 53.9,
+    "windows": [
+      {
+        "window_hours": 24,
+        "score": 0.0,
+        "weighted_score": 0.0
+      },
+      {
+        "window_hours": 48,
+        "score": 50.0,
+        "weighted_score": 53.9
+      },
+      {
+        "window_hours": 72,
+        "score": 50.0,
+        "weighted_score": 53.9
+      }
+    ],
+    "breakdown": [
+      {
+        "part_id": "prt_a",
+        "part_name": "Hydraulic piston rod",
+        "weight_inr": 1200000.0,
+        "covered": false,
+        "covered_by": null,
+        "backup_status": null,
+        "reason": "NO_PARTNER_ELIGIBLE",
+        "detail": "no partner can serve every step of the route with the material"
+      },
+      {
+        "part_id": "prt_b",
+        "part_name": "Pump shaft",
+        "weight_inr": 1270000.0,
+        "covered": true,
+        "covered_by": "fac_oragadam",
+        "backup_status": "READY",
+        "reason": null,
+        "detail": "Sample Components (Oragadam) can run it in 38.0 h (window 48 h)"
+      },
+      {
+        "part_id": "prt_c",
+        "part_name": "Valve body flange",
+        "weight_inr": 950000.0,
+        "covered": true,
+        "covered_by": "fac_oragadam",
+        "backup_status": "READY",
+        "reason": null,
+        "detail": "Sample Components (Oragadam) can run it in 24.5 h (window 48 h)"
+      },
+      {
+        "part_id": "prt_f",
+        "part_name": "Gear blank",
+        "weight_inr": 700000.0,
+        "covered": false,
+        "covered_by": null,
+        "backup_status": null,
+        "reason": "NOT_READY",
+        "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+      }
+    ],
+    "review": [
+      {
+        "relationship_id": "rel_amb_nb",
+        "partner_id": "fac_amb_nb",
+        "partner_name": "Sample Precision Works (Ambattur)",
+        "status": "READY",
+        "effective_status": "READY",
+        "last_confirmed_at": "2026-10-30T23:08:10.565770Z",
+        "days_since_confirm": 15.0,
+        "expiring": false,
+        "action": "reconfirm"
+      },
+      {
+        "relationship_id": "rel_guindy",
+        "partner_id": "fac_guindy",
+        "partner_name": "Sample Machining (Guindy)",
+        "status": "READY",
+        "effective_status": "READY",
+        "last_confirmed_at": "2026-11-04T23:08:10.565770Z",
+        "days_since_confirm": 10.0,
+        "expiring": false,
+        "action": "reconfirm"
+      },
+      {
+        "relationship_id": "rel_oragadam",
+        "partner_id": "fac_oragadam",
+        "partner_name": "Sample Components (Oragadam)",
+        "status": "READY",
+        "effective_status": "READY",
+        "last_confirmed_at": "2026-10-05T23:08:10.565770Z",
+        "days_since_confirm": 40.0,
+        "expiring": false,
+        "action": "reconfirm"
+      },
+      {
+        "relationship_id": "rel_peenya",
+        "partner_id": "fac_peenya",
+        "partner_name": "Sample Works (Peenya, Bengaluru)",
+        "status": "READY",
+        "effective_status": "STALE",
+        "last_confirmed_at": "2026-07-17T23:08:10.565770Z",
+        "days_since_confirm": 120.0,
+        "expiring": false,
+        "action": "reconfirm"
+      }
+    ],
+    "stale_partners": 1,
+    "trace": [
+      {
+        "step": "load_world",
+        "detail": "4 critical part(s) weighted by open-order value; 6 partner(s).",
+        "inputs": {
+          "factory_id": "fac_owner"
+        },
+        "output": {
+          "critical_parts": [
+            "prt_a",
+            "prt_b",
+            "prt_c",
+            "prt_f"
+          ],
+          "total_weight_inr": 4120000.0,
+          "stale_partners": 1
+        }
+      },
+      {
+        "step": "window",
+        "detail": "24 h: 0 unweighted, 0 weighted (covered INR 0 of 4,120,000).",
+        "inputs": null,
+        "output": {
+          "breakdown": [
+            {
+              "part_id": "prt_a",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_PARTNER_ELIGIBLE",
+              "detail": "no partner can serve every step of the route with the material"
+            },
+            {
+              "part_id": "prt_b",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_CAPACITY",
+              "detail": "READY partner(s) lack declared spare capacity for this batch in the window"
+            },
+            {
+              "part_id": "prt_c",
+              "covered": false,
+              "covered_by": null,
+              "reason": "TOO_SLOW",
+              "detail": "fastest READY partner needs 24.5 h (mobilisation + production + logistics)"
+            },
+            {
+              "part_id": "prt_f",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NOT_READY",
+              "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+            }
+          ]
+        }
+      },
+      {
+        "step": "window",
+        "detail": "48 h: 50 unweighted, 54 weighted (covered INR 2,220,000 of 4,120,000).",
+        "inputs": null,
+        "output": {
+          "breakdown": [
+            {
+              "part_id": "prt_a",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_PARTNER_ELIGIBLE",
+              "detail": "no partner can serve every step of the route with the material"
+            },
+            {
+              "part_id": "prt_b",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 38.0 h (window 48 h)"
+            },
+            {
+              "part_id": "prt_c",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 24.5 h (window 48 h)"
+            },
+            {
+              "part_id": "prt_f",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NOT_READY",
+              "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+            }
+          ]
+        }
+      },
+      {
+        "step": "window",
+        "detail": "72 h: 50 unweighted, 54 weighted (covered INR 2,220,000 of 4,120,000).",
+        "inputs": null,
+        "output": {
+          "breakdown": [
+            {
+              "part_id": "prt_a",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_PARTNER_ELIGIBLE",
+              "detail": "no partner can serve every step of the route with the material"
+            },
+            {
+              "part_id": "prt_b",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 38.0 h (window 72 h)"
+            },
+            {
+              "part_id": "prt_c",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 24.5 h (window 72 h)"
+            },
+            {
+              "part_id": "prt_f",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NOT_READY",
+              "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "readiness_actions": {
+    "factory_id": "fac_owner",
+    "window_hours": 48,
+    "actions": [
+      {
+        "relationship_id": "rel_hosur",
+        "partner_id": "fac_hosur",
+        "label": "Complete checks and set Sample Engineering (Hosur) READY",
+        "uplift_points": 17.0,
+        "current_score": 53.9,
+        "projected_score": 70.9
+      }
+    ],
+    "trace": [
+      {
+        "step": "load_world",
+        "detail": "4 critical part(s) weighted by open-order value; 6 partner(s).",
+        "inputs": {
+          "factory_id": "fac_owner"
+        },
+        "output": {
+          "critical_parts": [
+            "prt_a",
+            "prt_b",
+            "prt_c",
+            "prt_f"
+          ],
+          "total_weight_inr": 4120000.0,
+          "stale_partners": 1
+        }
+      },
+      {
+        "step": "window",
+        "detail": "24 h: 0 unweighted, 0 weighted (covered INR 0 of 4,120,000).",
+        "inputs": null,
+        "output": {
+          "breakdown": [
+            {
+              "part_id": "prt_a",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_PARTNER_ELIGIBLE",
+              "detail": "no partner can serve every step of the route with the material"
+            },
+            {
+              "part_id": "prt_b",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_CAPACITY",
+              "detail": "READY partner(s) lack declared spare capacity for this batch in the window"
+            },
+            {
+              "part_id": "prt_c",
+              "covered": false,
+              "covered_by": null,
+              "reason": "TOO_SLOW",
+              "detail": "fastest READY partner needs 24.5 h (mobilisation + production + logistics)"
+            },
+            {
+              "part_id": "prt_f",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NOT_READY",
+              "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+            }
+          ]
+        }
+      },
+      {
+        "step": "window",
+        "detail": "48 h: 50 unweighted, 54 weighted (covered INR 2,220,000 of 4,120,000).",
+        "inputs": null,
+        "output": {
+          "breakdown": [
+            {
+              "part_id": "prt_a",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_PARTNER_ELIGIBLE",
+              "detail": "no partner can serve every step of the route with the material"
+            },
+            {
+              "part_id": "prt_b",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 38.0 h (window 48 h)"
+            },
+            {
+              "part_id": "prt_c",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 24.5 h (window 48 h)"
+            },
+            {
+              "part_id": "prt_f",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NOT_READY",
+              "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+            }
+          ]
+        }
+      },
+      {
+        "step": "window",
+        "detail": "72 h: 50 unweighted, 54 weighted (covered INR 2,220,000 of 4,120,000).",
+        "inputs": null,
+        "output": {
+          "breakdown": [
+            {
+              "part_id": "prt_a",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NO_PARTNER_ELIGIBLE",
+              "detail": "no partner can serve every step of the route with the material"
+            },
+            {
+              "part_id": "prt_b",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 38.0 h (window 72 h)"
+            },
+            {
+              "part_id": "prt_c",
+              "covered": true,
+              "covered_by": "fac_oragadam",
+              "reason": null,
+              "detail": "Sample Components (Oragadam) can run it in 24.5 h (window 72 h)"
+            },
+            {
+              "part_id": "prt_f",
+              "covered": false,
+              "covered_by": null,
+              "reason": "NOT_READY",
+              "detail": "capable partner(s) not READY yet: Sample Engineering (Hosur)"
+            }
+          ]
+        }
+      },
+      {
+        "step": "actions",
+        "detail": "1 action(s) with a positive uplift at the 48 h window.",
+        "inputs": null,
+        "output": {
+          "actions": [
+            {
+              "relationship_id": "rel_hosur",
+              "partner_id": "fac_hosur",
+              "label": "Complete checks and set Sample Engineering (Hosur) READY",
+              "uplift_points": 17.0,
+              "current_score": 53.9,
+              "projected_score": 70.9
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "readiness_history": {
+    "factory_id": "fac_owner",
+    "points": [
+      {
+        "computed_at": "2026-11-14T23:08:10.706659Z",
+        "window_hours": 24,
+        "score": 0.0,
+        "weighted_score": 0.0
+      },
+      {
+        "computed_at": "2026-11-14T23:08:10.706659Z",
+        "window_hours": 48,
+        "score": 50.0,
+        "weighted_score": 53.9
+      },
+      {
+        "computed_at": "2026-11-14T23:08:10.706659Z",
+        "window_hours": 72,
+        "score": 50.0,
+        "weighted_score": 53.9
+      },
+      {
+        "computed_at": "2026-11-14T23:08:10.973538Z",
+        "window_hours": 24,
+        "score": 0.0,
+        "weighted_score": 0.0
+      },
+      {
+        "computed_at": "2026-11-14T23:08:10.973538Z",
+        "window_hours": 48,
+        "score": 50.0,
+        "weighted_score": 53.9
+      },
+      {
+        "computed_at": "2026-11-14T23:08:10.973538Z",
+        "window_hours": 72,
+        "score": 50.0,
+        "weighted_score": 53.9
+      }
+    ]
+  },
+  "factories": {
+    "items": [
+      {
+        "id": "fac_amb_nb",
+        "role": "PARTNER",
+        "name": "Sample Precision Works (Ambattur)",
+        "is_sample": true,
+        "lat": 13.098,
+        "lon": 80.158,
+        "cluster_id": "cl_ambattur",
+        "hazard_zone_id": "zone_ambattur_north",
+        "grid_id": "grid_chennai_metro",
+        "shift_hours_per_day": 16.0,
+        "materials_handled": [
+          "EN8",
+          "EN24",
+          "SS304"
+        ],
+        "typical_lead_time_hours": 48.0,
+        "mobilisation_hours": 6.0,
+        "spare_hours_per_week": {
+          "TURN": 80.0,
+          "MILL": 60.0,
+          "GRIND_CYL": 32.0
+        },
+        "contacts": [
+          "production",
+          "quality"
+        ]
+      },
+      {
+        "id": "fac_cbe",
+        "role": "PARTNER",
+        "name": "Sample Tools (Coimbatore)",
+        "is_sample": true,
+        "lat": 10.95,
+        "lon": 76.97,
+        "cluster_id": "cl_cbe",
+        "hazard_zone_id": null,
+        "grid_id": "grid_cbe",
+        "shift_hours_per_day": 16.0,
+        "materials_handled": [
+          "EN8",
+          "EN19"
+        ],
+        "typical_lead_time_hours": 96.0,
+        "mobilisation_hours": 16.0,
+        "spare_hours_per_week": {
+          "MILL": 60.0,
+          "GRIND_CYL": 40.0
+        },
+        "contacts": [
+          "production"
+        ]
+      },
+      {
+        "id": "fac_guindy",
+        "role": "PARTNER",
+        "name": "Sample Machining (Guindy)",
+        "is_sample": true,
+        "lat": 13.01,
+        "lon": 80.212,
+        "cluster_id": "cl_guindy",
+        "hazard_zone_id": "zone_guindy_adyar",
+        "grid_id": "grid_chennai_metro",
+        "shift_hours_per_day": 16.0,
+        "materials_handled": [
+          "EN8",
+          "SS304",
+          "Al6061"
+        ],
+        "typical_lead_time_hours": 48.0,
+        "mobilisation_hours": 8.0,
+        "spare_hours_per_week": {
+          "TURN": 60.0,
+          "MILL": 80.0
+        },
+        "contacts": [
+          "production"
+        ]
+      },
+      {
+        "id": "fac_hosur",
+        "role": "PARTNER",
+        "name": "Sample Engineering (Hosur)",
+        "is_sample": true,
+        "lat": 12.74,
+        "lon": 77.83,
+        "cluster_id": "cl_hosur",
+        "hazard_zone_id": null,
+        "grid_id": "grid_hosur",
+        "shift_hours_per_day": 18.0,
+        "materials_handled": [
+          "EN8",
+          "EN19",
+          "SS304"
+        ],
+        "typical_lead_time_hours": 72.0,
+        "mobilisation_hours": 12.0,
+        "spare_hours_per_week": {
+          "TURN": 100.0,
+          "MILL": 80.0,
+          "HEAT_TREAT": 40.0
+        },
+        "contacts": [
+          "production",
+          "quality"
+        ]
+      },
+      {
+        "id": "fac_oragadam",
+        "role": "PARTNER",
+        "name": "Sample Components (Oragadam)",
+        "is_sample": true,
+        "lat": 12.842,
+        "lon": 79.952,
+        "cluster_id": "cl_oragadam",
+        "hazard_zone_id": null,
+        "grid_id": "grid_kanchi_south",
+        "shift_hours_per_day": 20.0,
+        "materials_handled": [
+          "EN8",
+          "EN24",
+          "SS304"
+        ],
+        "typical_lead_time_hours": 72.0,
+        "mobilisation_hours": 10.0,
+        "spare_hours_per_week": {
+          "TURN": 120.0,
+          "MILL": 100.0,
+          "DRILL_TAP": 30.0
+        },
+        "contacts": [
+          "production",
+          "quality",
+          "purchase"
+        ]
+      },
+      {
+        "id": "fac_owner",
+        "role": "OWNER",
+        "name": "Sample Precision Components",
+        "is_sample": true,
+        "lat": 13.1,
+        "lon": 80.155,
+        "cluster_id": "cl_ambattur",
+        "hazard_zone_id": "zone_ambattur_north",
+        "grid_id": "grid_chennai_metro",
+        "shift_hours_per_day": 16.0,
+        "materials_handled": [
+          "EN8",
+          "EN24",
+          "SS304",
+          "Al6061",
+          "Brass IS 319",
+          "Mild Steel"
+        ],
+        "typical_lead_time_hours": 72.0,
+        "mobilisation_hours": null,
+        "spare_hours_per_week": {},
+        "contacts": [
+          "production",
+          "quality",
+          "purchase"
+        ]
+      },
+      {
+        "id": "fac_peenya",
+        "role": "PARTNER",
+        "name": "Sample Works (Peenya, Bengaluru)",
+        "is_sample": true,
+        "lat": 13.028,
+        "lon": 77.52,
+        "cluster_id": "cl_peenya",
+        "hazard_zone_id": null,
+        "grid_id": "grid_blr",
+        "shift_hours_per_day": 16.0,
+        "materials_handled": [
+          "EN8",
+          "Mild Steel"
+        ],
+        "typical_lead_time_hours": 72.0,
+        "mobilisation_hours": 10.0,
+        "spare_hours_per_week": {
+          "TURN": 80.0,
+          "MILL": 60.0
+        },
+        "contacts": [
+          "production"
+        ]
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "id": "rel_amb_nb",
+      "owner_id": "fac_owner",
+      "partner_id": "fac_amb_nb",
+      "status": "READY",
+      "effective_status": "READY",
+      "last_confirmed_at": "2026-10-30T23:08:10.565770Z",
+      "customer_approval_required": true,
+      "notes": "Technically perfect (has the grinder) but sits in the owner's own flood zone - excluded by correlated risk, not by status.",
+      "checks": [
+        {
+          "key": "TECH_ASSESSMENT_DONE",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "SAMPLE_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "TERMS_AGREED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CAPACITY_RECONFIRMED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CUSTOMER_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        }
+      ]
+    },
+    {
+      "id": "rel_cbe",
+      "owner_id": "fac_owner",
+      "partner_id": "fac_cbe",
+      "status": "POTENTIAL_MATCH",
+      "effective_status": "POTENTIAL_MATCH",
+      "last_confirmed_at": null,
+      "customer_approval_required": true,
+      "notes": "Technical assessment done: no grinding at the +-0.005 mm tolerance.",
+      "checks": [
+        {
+          "key": "TECH_ASSESSMENT_DONE",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "SAMPLE_APPROVED",
+          "done": false,
+          "done_at": null
+        },
+        {
+          "key": "TERMS_AGREED",
+          "done": false,
+          "done_at": null
+        },
+        {
+          "key": "CAPACITY_RECONFIRMED",
+          "done": false,
+          "done_at": null
+        },
+        {
+          "key": "CUSTOMER_APPROVED",
+          "done": false,
+          "done_at": null
+        }
+      ]
+    },
+    {
+      "id": "rel_guindy",
+      "owner_id": "fac_owner",
+      "partner_id": "fac_guindy",
+      "status": "READY",
+      "effective_status": "READY",
+      "last_confirmed_at": "2026-11-04T23:08:10.565770Z",
+      "customer_approval_required": true,
+      "notes": "Same storm footprint as the owner - excluded or down-ranked by live exposure.",
+      "checks": [
+        {
+          "key": "TECH_ASSESSMENT_DONE",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "SAMPLE_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "TERMS_AGREED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CAPACITY_RECONFIRMED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CUSTOMER_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        }
+      ]
+    },
+    {
+      "id": "rel_hosur",
+      "owner_id": "fac_owner",
+      "partner_id": "fac_hosur",
+      "status": "APPROVAL_PENDING",
+      "effective_status": "APPROVAL_PENDING",
+      "last_confirmed_at": "2026-10-25T23:08:10.565770Z",
+      "customer_approval_required": true,
+      "notes": "Technically suitable; awaiting customer approval and capacity reconfirmation.",
+      "checks": [
+        {
+          "key": "TECH_ASSESSMENT_DONE",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "SAMPLE_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "TERMS_AGREED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CAPACITY_RECONFIRMED",
+          "done": false,
+          "done_at": null
+        },
+        {
+          "key": "CUSTOMER_APPROVED",
+          "done": false,
+          "done_at": null
+        }
+      ]
+    },
+    {
+      "id": "rel_oragadam",
+      "owner_id": "fac_owner",
+      "partner_id": "fac_oragadam",
+      "status": "READY",
+      "effective_status": "READY",
+      "last_confirmed_at": "2026-10-05T23:08:10.565770Z",
+      "customer_approval_required": true,
+      "notes": "Hero backup - fresh confirmation, outside the storm footprint.",
+      "checks": [
+        {
+          "key": "TECH_ASSESSMENT_DONE",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "SAMPLE_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "TERMS_AGREED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CAPACITY_RECONFIRMED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CUSTOMER_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        }
+      ]
+    },
+    {
+      "id": "rel_peenya",
+      "owner_id": "fac_owner",
+      "partner_id": "fac_peenya",
+      "status": "READY",
+      "effective_status": "STALE",
+      "last_confirmed_at": "2026-07-17T23:08:10.565770Z",
+      "customer_approval_required": true,
+      "notes": "Confirmed ~120 days ago - past the 90-day staleness window, does not count until reconfirmed.",
+      "checks": [
+        {
+          "key": "TECH_ASSESSMENT_DONE",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "SAMPLE_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "TERMS_AGREED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CAPACITY_RECONFIRMED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        },
+        {
+          "key": "CUSTOMER_APPROVED",
+          "done": true,
+          "done_at": "2026-11-14T23:08:10.565770Z"
+        }
+      ]
+    }
+  ],
+  "orders": {
+    "items": [
+      {
+        "id": "ord_101",
+        "factory_id": "fac_owner",
+        "part_id": "prt_a",
+        "qty": 50,
+        "due_at": "2026-11-18T23:08:10.565770Z",
+        "value_inr": 1200000.0,
+        "customer_alias": "ACME Hydraulics (SAMPLE)"
+      },
+      {
+        "id": "ord_102",
+        "factory_id": "fac_owner",
+        "part_id": "prt_b",
+        "qty": 200,
+        "due_at": "2026-11-19T23:08:10.565770Z",
+        "value_inr": 850000.0,
+        "customer_alias": "ACME Pumps (SAMPLE)"
+      },
+      {
+        "id": "ord_103",
+        "factory_id": "fac_owner",
+        "part_id": "prt_c",
+        "qty": 40,
+        "due_at": "2026-11-20T23:08:10.565770Z",
+        "value_inr": 600000.0,
+        "customer_alias": "Delta Valves (SAMPLE)"
+      },
+      {
+        "id": "ord_104",
+        "factory_id": "fac_owner",
+        "part_id": "prt_d",
+        "qty": 300,
+        "due_at": "2026-11-16T23:08:10.565770Z",
+        "value_inr": 180000.0,
+        "customer_alias": "Fasteners Co (SAMPLE)"
+      },
+      {
+        "id": "ord_105",
+        "factory_id": "fac_owner",
+        "part_id": "prt_e",
+        "qty": 500,
+        "due_at": "2026-11-21T23:08:10.565770Z",
+        "value_inr": 150000.0,
+        "customer_alias": "Iron Motors (SAMPLE)"
+      },
+      {
+        "id": "ord_106",
+        "factory_id": "fac_owner",
+        "part_id": "prt_f",
+        "qty": 60,
+        "due_at": "2026-11-22T23:08:10.565770Z",
+        "value_inr": 700000.0,
+        "customer_alias": "Delta Valves (SAMPLE)"
+      },
+      {
+        "id": "ord_107",
+        "factory_id": "fac_owner",
+        "part_id": "prt_b",
+        "qty": 100,
+        "due_at": "2026-11-17T23:08:10.565770Z",
+        "value_inr": 420000.0,
+        "customer_alias": "ACME Pumps (SAMPLE)"
+      },
+      {
+        "id": "ord_108",
+        "factory_id": "fac_owner",
+        "part_id": "prt_c",
+        "qty": 25,
+        "due_at": "2026-11-26T23:08:10.565770Z",
+        "value_inr": 350000.0,
+        "customer_alias": "Delta Valves (SAMPLE)"
+      }
+    ]
+  },
+  "parts": {
+    "items": [
+      {
+        "id": "prt_1983b91ea4",
+        "factory_id": "fac_owner",
+        "name": "PUMP SHAFT",
+        "drawing_no": "DWG-PSH-014",
+        "customer_alias": "ACME Pumps (SAMPLE)",
+        "material": "EN8",
+        "is_critical": false,
+        "typical_batch_qty": 200,
+        "passport_id": null
+      },
+      {
+        "id": "prt_a",
+        "factory_id": "fac_owner",
+        "name": "Hydraulic piston rod",
+        "drawing_no": "DWG-HPR-001",
+        "customer_alias": "ACME Hydraulics (SAMPLE)",
+        "material": "EN24",
+        "is_critical": true,
+        "typical_batch_qty": 50,
+        "passport_id": null
+      },
+      {
+        "id": "prt_b",
+        "factory_id": "fac_owner",
+        "name": "Pump shaft",
+        "drawing_no": "DWG-PSH-014",
+        "customer_alias": "ACME Pumps (SAMPLE)",
+        "material": "EN8",
+        "is_critical": true,
+        "typical_batch_qty": 200,
+        "passport_id": null
+      },
+      {
+        "id": "prt_c",
+        "factory_id": "fac_owner",
+        "name": "Valve body flange",
+        "drawing_no": "DWG-VBF-207",
+        "customer_alias": "Delta Valves (SAMPLE)",
+        "material": "SS304",
+        "is_critical": true,
+        "typical_batch_qty": 40,
+        "passport_id": null
+      },
+      {
+        "id": "prt_d",
+        "factory_id": "fac_owner",
+        "name": "Bracket",
+        "drawing_no": "DWG-BKT-033",
+        "customer_alias": "Fasteners Co (SAMPLE)",
+        "material": "Al6061",
+        "is_critical": false,
+        "typical_batch_qty": 300,
+        "passport_id": null
+      },
+      {
+        "id": "prt_e",
+        "factory_id": "fac_owner",
+        "name": "Bushing",
+        "drawing_no": "DWG-BSH-118",
+        "customer_alias": "Iron Motors (SAMPLE)",
+        "material": "Brass IS 319",
+        "is_critical": false,
+        "typical_batch_qty": 500,
+        "passport_id": null
+      },
+      {
+        "id": "prt_f",
+        "factory_id": "fac_owner",
+        "name": "Gear blank",
+        "drawing_no": "DWG-GBL-052",
+        "customer_alias": "Delta Valves (SAMPLE)",
+        "material": "EN8",
+        "is_critical": true,
+        "typical_batch_qty": 60,
+        "passport_id": null
+      }
+    ]
+  },
+  "matching": {
+    "order_id": "ord_102",
+    "candidates": [
+      {
+        "partner_id": "fac_oragadam",
+        "name": "Sample Components (Oragadam)",
+        "status": "READY",
+        "effective_status": "READY",
+        "distance_km": 36.2,
+        "filters": [
+          {
+            "key": "process",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner possesses capable equipment or capabilities for all route steps."
+          },
+          {
+            "key": "material",
+            "result": "PASS",
+            "basis": "declared profile (stock unverified)",
+            "detail": "Partner handles EN8 (family: carbon_steel)."
+          },
+          {
+            "key": "tolerance",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner achievable tolerances meet or exceed drawing requirements."
+          },
+          {
+            "key": "envelope",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "No dimension envelope restriction specified."
+          },
+          {
+            "key": "capacity",
+            "result": "PASS",
+            "basis": "declared capacity",
+            "detail": "Declared spare capacity is sufficient for order batch size."
+          },
+          {
+            "key": "lead_time",
+            "result": "PASS",
+            "basis": "declared lead time and distance",
+            "detail": "Estimated completion in 36.8h (deadline buffer is 96.0h)."
+          }
+        ],
+        "unverified": [],
+        "excluded": false,
+        "exclusion_reason": null,
+        "flags": [],
+        "score": 73.4,
+        "selected_for_set": true
+      },
+      {
+        "partner_id": "fac_hosur",
+        "name": "Sample Engineering (Hosur)",
+        "status": "APPROVAL_PENDING",
+        "effective_status": "APPROVAL_PENDING",
+        "distance_km": 255.1,
+        "filters": [
+          {
+            "key": "process",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner possesses capable equipment or capabilities for all route steps."
+          },
+          {
+            "key": "material",
+            "result": "PASS",
+            "basis": "declared profile (stock unverified)",
+            "detail": "Partner handles EN8 (family: carbon_steel)."
+          },
+          {
+            "key": "tolerance",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner achievable tolerances meet or exceed drawing requirements."
+          },
+          {
+            "key": "envelope",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "No dimension envelope restriction specified."
+          },
+          {
+            "key": "capacity",
+            "result": "PASS",
+            "basis": "declared capacity",
+            "detail": "Declared spare capacity is sufficient for order batch size."
+          },
+          {
+            "key": "lead_time",
+            "result": "PASS",
+            "basis": "declared lead time and distance",
+            "detail": "Estimated completion in 51.2h (deadline buffer is 96.0h)."
+          }
+        ],
+        "unverified": [
+          "CAPACITY_RECONFIRMED: Shop-floor capacity reconfirmation",
+          "CUSTOMER_APPROVED: End-customer approval for alternative production"
+        ],
+        "excluded": false,
+        "exclusion_reason": null,
+        "flags": [],
+        "score": 64.2,
+        "selected_for_set": true
+      },
+      {
+        "partner_id": "fac_peenya",
+        "name": "Sample Works (Peenya, Bengaluru)",
+        "status": "READY",
+        "effective_status": "STALE",
+        "distance_km": 285.5,
+        "filters": [
+          {
+            "key": "process",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner possesses capable equipment or capabilities for all route steps."
+          },
+          {
+            "key": "material",
+            "result": "PASS",
+            "basis": "declared profile (stock unverified)",
+            "detail": "Partner handles EN8 (family: carbon_steel)."
+          },
+          {
+            "key": "tolerance",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner achievable tolerances meet or exceed drawing requirements."
+          },
+          {
+            "key": "envelope",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "No dimension envelope restriction specified."
+          },
+          {
+            "key": "capacity",
+            "result": "UNKNOWN",
+            "basis": "declared capacity",
+            "detail": "Capacity unverified because relationship confirmation is stale (> 90 days)."
+          },
+          {
+            "key": "lead_time",
+            "result": "PASS",
+            "basis": "declared lead time and distance",
+            "detail": "Estimated completion in 72.3h (deadline buffer is 96.0h)."
+          }
+        ],
+        "unverified": [],
+        "excluded": false,
+        "exclusion_reason": null,
+        "flags": [
+          "RECONFIRM_NEEDED"
+        ],
+        "score": 47.3,
+        "selected_for_set": false
+      },
+      {
+        "partner_id": "fac_cbe",
+        "name": "Sample Tools (Coimbatore)",
+        "status": "POTENTIAL_MATCH",
+        "effective_status": "POTENTIAL_MATCH",
+        "distance_km": 420.9,
+        "filters": [
+          {
+            "key": "process",
+            "result": "FAIL",
+            "basis": "declared profile",
+            "detail": "Partner lacks machine or capability for process(es): TURN"
+          },
+          {
+            "key": "material",
+            "result": "PASS",
+            "basis": "declared profile (stock unverified)",
+            "detail": "Partner handles EN8 (family: carbon_steel)."
+          },
+          {
+            "key": "tolerance",
+            "result": "FAIL",
+            "basis": "declared profile",
+            "detail": "Partner machines cannot hold tolerance for: TURN (requires ±0.02 mm)"
+          },
+          {
+            "key": "envelope",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "No dimension envelope restriction specified."
+          },
+          {
+            "key": "capacity",
+            "result": "FAIL",
+            "basis": "declared capacity",
+            "detail": "Insufficient spare capacity: TURN requires 16.8h, partner has 0.0h spare"
+          },
+          {
+            "key": "lead_time",
+            "result": "PASS",
+            "basis": "declared lead time and distance",
+            "detail": "Estimated completion in 76.0h (deadline buffer is 96.0h)."
+          }
+        ],
+        "unverified": [
+          "SAMPLE_APPROVED: First-article sample inspection and sign-off",
+          "TERMS_AGREED: Commercial recovery terms and NDA",
+          "CAPACITY_RECONFIRMED: Shop-floor capacity reconfirmation",
+          "CUSTOMER_APPROVED: End-customer approval for alternative production"
+        ],
+        "excluded": false,
+        "exclusion_reason": null,
+        "flags": [],
+        "score": null,
+        "selected_for_set": false
+      },
+      {
+        "partner_id": "fac_amb_nb",
+        "name": "Sample Precision Works (Ambattur)",
+        "status": "READY",
+        "effective_status": "READY",
+        "distance_km": 0.4,
+        "filters": [
+          {
+            "key": "process",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner possesses capable equipment or capabilities for all route steps."
+          },
+          {
+            "key": "material",
+            "result": "PASS",
+            "basis": "declared profile (stock unverified)",
+            "detail": "Partner handles EN8 (family: carbon_steel)."
+          },
+          {
+            "key": "tolerance",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner achievable tolerances meet or exceed drawing requirements."
+          },
+          {
+            "key": "envelope",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "No dimension envelope restriction specified."
+          },
+          {
+            "key": "capacity",
+            "result": "PASS",
+            "basis": "declared capacity",
+            "detail": "Declared spare capacity is sufficient for order batch size."
+          },
+          {
+            "key": "lead_time",
+            "result": "PASS",
+            "basis": "declared lead time and distance",
+            "detail": "Estimated completion in 41.4h (deadline buffer is 96.0h)."
+          }
+        ],
+        "unverified": [],
+        "excluded": true,
+        "exclusion_reason": "SAME_CLUSTER",
+        "flags": [
+          "NEARBY"
+        ],
+        "score": null,
+        "selected_for_set": false
+      },
+      {
+        "partner_id": "fac_guindy",
+        "name": "Sample Machining (Guindy)",
+        "status": "READY",
+        "effective_status": "READY",
+        "distance_km": 11.8,
+        "filters": [
+          {
+            "key": "process",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner possesses capable equipment or capabilities for all route steps."
+          },
+          {
+            "key": "material",
+            "result": "PASS",
+            "basis": "declared profile (stock unverified)",
+            "detail": "Partner handles EN8 (family: carbon_steel)."
+          },
+          {
+            "key": "tolerance",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "Partner achievable tolerances meet or exceed drawing requirements."
+          },
+          {
+            "key": "envelope",
+            "result": "PASS",
+            "basis": "declared profile",
+            "detail": "No dimension envelope restriction specified."
+          },
+          {
+            "key": "capacity",
+            "result": "PASS",
+            "basis": "declared capacity",
+            "detail": "Declared spare capacity is sufficient for order batch size."
+          },
+          {
+            "key": "lead_time",
+            "result": "PASS",
+            "basis": "declared lead time and distance",
+            "detail": "Estimated completion in 43.7h (deadline buffer is 96.0h)."
+          }
+        ],
+        "unverified": [],
+        "excluded": true,
+        "exclusion_reason": "ALSO_EXPOSED_SAME_EVENT",
+        "flags": [
+          "SAME_GRID"
+        ],
+        "score": null,
+        "selected_for_set": false
+      }
+    ],
+    "recommended_set": {
+      "partner_ids": [
+        "fac_oragadam",
+        "fac_hosur"
+      ],
+      "note": "Recommended set provides geographic separation across Sample Components (Oragadam) (36 km) and Sample Engineering (Hosur) (255 km) on independent power grids."
+    },
+    "fallback_level": "READY",
+    "best_backup": "fac_oragadam",
+    "trace": [
+      {
+        "step": "load_order",
+        "detail": "Order ord_102 (Pump shaft): qty=200, material=EN8, due in 120.0h, 2 step(s).",
+        "inputs": {
+          "order_id": "ord_102",
+          "part_id": "prt_b",
+          "qty": 200,
+          "due_at": "2026-11-19T23:08:10.565770+00:00"
+        },
+        "output": null
+      },
+      {
+        "step": "partner_exposure",
+        "detail": "Partner site risks from the exposure service (replay mode, source=replay, degraded=False).",
+        "inputs": {
+          "mode": "replay"
+        },
+        "output": {
+          "site_risk_by_partner": {
+            "sup_steel": 69,
+            "ven_heat": 74,
+            "fac_amb_nb": 86,
+            "fac_cbe": 1,
+            "fac_guindy": 67,
+            "fac_hosur": 0,
+            "fac_oragadam": 48,
+            "fac_peenya": 1
+          },
+          "alert_threshold": 50,
+          "exclusion_rule": "excluded when listed in the scenario's affected sites, or when site risk is at/above the alert threshold; the indicator is not a flood model, so threshold exclusions are the same evidence M4 alerts on"
+        }
+      },
+      {
+        "step": "candidates_loaded",
+        "detail": "Loaded 6 partner candidates for owner fac_owner.",
+        "inputs": null,
+        "output": {
+          "partner_ids": [
+            "fac_amb_nb",
+            "fac_cbe",
+            "fac_guindy",
+            "fac_hosur",
+            "fac_oragadam",
+            "fac_peenya"
+          ]
+        }
+      },
+      {
+        "step": "candidate_ranked",
+        "detail": "Candidate Sample Components (Oragadam) scored 73.4/100 (effective status READY).",
+        "inputs": null,
+        "output": {
+          "partner_id": "fac_oragadam",
+          "score": 73.4
+        }
+      },
+      {
+        "step": "candidate_ranked",
+        "detail": "Candidate Sample Engineering (Hosur) scored 64.2/100 (effective status APPROVAL_PENDING).",
+        "inputs": null,
+        "output": {
+          "partner_id": "fac_hosur",
+          "score": 64.2
+        }
+      },
+      {
+        "step": "candidate_ranked",
+        "detail": "Candidate Sample Works (Peenya, Bengaluru) scored 47.3/100 (effective status STALE).",
+        "inputs": null,
+        "output": {
+          "partner_id": "fac_peenya",
+          "score": 47.3
+        }
+      },
+      {
+        "step": "candidate_excluded",
+        "detail": "Candidate Sample Precision Works (Ambattur) excluded: SAME_CLUSTER.",
+        "inputs": null,
+        "output": {
+          "partner_id": "fac_amb_nb",
+          "reason": "SAME_CLUSTER"
+        }
+      },
+      {
+        "step": "candidate_excluded",
+        "detail": "Candidate Sample Machining (Guindy) excluded: ALSO_EXPOSED_SAME_EVENT.",
+        "inputs": null,
+        "output": {
+          "partner_id": "fac_guindy",
+          "reason": "ALSO_EXPOSED_SAME_EVENT"
+        }
+      },
+      {
+        "step": "summary",
+        "detail": "Matching completed: fallback level is READY; best backup is fac_oragadam.",
+        "inputs": null,
+        "output": {
+          "fallback_level": "READY",
+          "best_backup": "fac_oragadam",
+          "recommended_set": [
+            "fac_oragadam",
+            "fac_hosur"
+          ]
+        }
+      }
+    ]
+  },
+  "recovery_request": {
+    "id": "rr_20261114230810_ord_102",
+    "factory_id": "fac_owner",
+    "order_id": "ord_102",
+    "stress_test_id": "str_auto_ff38b47a8b5aba43_fac_owner",
+    "passport_id": null,
+    "status": "ACTIVE",
+    "selected_partner_id": "fac_oragadam",
+    "options": [
+      {
+        "partner_id": "fac_oragadam",
+        "name": "Sample Components (Oragadam)",
+        "status": "READY",
+        "effective_status": "READY",
+        "excluded": false,
+        "exclusion_reason": null,
+        "outstanding_checks": [],
+        "capacity_summary": "declared spare: MILL 100 h/wk, TURN 120 h/wk"
+      },
+      {
+        "partner_id": "fac_hosur",
+        "name": "Sample Engineering (Hosur)",
+        "status": "APPROVAL_PENDING",
+        "effective_status": "APPROVAL_PENDING",
+        "excluded": false,
+        "exclusion_reason": null,
+        "outstanding_checks": [
+          "CAPACITY_RECONFIRMED pending",
+          "CUSTOMER_APPROVED pending"
+        ],
+        "capacity_summary": "declared spare: MILL 80 h/wk, TURN 100 h/wk"
+      },
+      {
+        "partner_id": "fac_peenya",
+        "name": "Sample Works (Peenya, Bengaluru)",
+        "status": "READY",
+        "effective_status": "STALE",
+        "excluded": false,
+        "exclusion_reason": null,
+        "outstanding_checks": [
+          "RECONFIRMATION pending (last confirmed beyond the staleness window)"
+        ],
+        "capacity_summary": "declared spare: MILL 60 h/wk, TURN 80 h/wk"
+      },
+      {
+        "partner_id": "fac_cbe",
+        "name": "Sample Tools (Coimbatore)",
+        "status": "POTENTIAL_MATCH",
+        "effective_status": "POTENTIAL_MATCH",
+        "excluded": false,
+        "exclusion_reason": null,
+        "outstanding_checks": [
+          "SAMPLE_APPROVED pending",
+          "TERMS_AGREED pending",
+          "CAPACITY_RECONFIRMED pending",
+          "CUSTOMER_APPROVED pending"
+        ],
+        "capacity_summary": "declared spare: MILL 60 h/wk"
+      },
+      {
+        "partner_id": "fac_amb_nb",
+        "name": "Sample Precision Works (Ambattur)",
+        "status": "READY",
+        "effective_status": "READY",
+        "excluded": true,
+        "exclusion_reason": "SAME_CLUSTER",
+        "outstanding_checks": [],
+        "capacity_summary": "declared spare: MILL 60 h/wk, TURN 80 h/wk"
+      },
+      {
+        "partner_id": "fac_guindy",
+        "name": "Sample Machining (Guindy)",
+        "status": "READY",
+        "effective_status": "READY",
+        "excluded": true,
+        "exclusion_reason": "ALSO_EXPOSED_SAME_EVENT",
+        "outstanding_checks": [],
+        "capacity_summary": "declared spare: MILL 80 h/wk, TURN 60 h/wk"
+      }
+    ],
+    "outstanding_approvals": [],
+    "data_label": "SIMULATED SAMPLE",
+    "activation_note": "Selecting a partner sends a recovery request only. Activation is subject to human, customer and contractual approvals outside the software.",
+    "created_at": "2026-11-14T23:08:10.830813Z"
+  },
+  "recovery_tracking": {
+    "request_id": "rr_20261114230810_ord_102",
+    "data_label": "SIMULATED SAMPLE",
+    "steps": [
+      {
+        "step_key": "REQUEST_SENT",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.859539Z"
+      },
+      {
+        "step_key": "PARTNER_RESPONSE",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.888760Z"
+      },
+      {
+        "step_key": "TECHNICAL_AND_CUSTOMER_APPROVALS",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.894266Z"
+      },
+      {
+        "step_key": "PRODUCTION_SCHEDULED",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.899318Z"
+      },
+      {
+        "step_key": "PRODUCTION_STARTED",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.904796Z"
+      },
+      {
+        "step_key": "QUALITY_INSPECTION",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.908411Z"
+      },
+      {
+        "step_key": "DISPATCH_AND_DELIVERY",
+        "state": "DONE",
+        "at": "2026-11-14T23:08:10.911746Z"
+      }
+    ]
+  },
+  "recovery_handover": {
+    "request_id": "rr_20261114230810_ord_102",
+    "data_label": "SIMULATED SAMPLE",
+    "job_requirements": {
+      "job": "Recovery job rr_20261114230810_ord_102",
+      "material": "EN8",
+      "process_route": [
+        {
+          "seq": 1,
+          "process": "TURN",
+          "tolerance_mm": 0.02
+        },
+        {
+          "seq": 2,
+          "process": "MILL",
+          "tolerance_mm": 0.05
+        }
+      ],
+      "tightest_tolerance_mm": 0.02,
+      "special_notes": []
+    },
+    "authorised_documents": [
+      "Recovery request summary (this pack)"
+    ],
+    "quantity": 200,
+    "deadline": "2026-11-19T23:08:10.565770Z",
+    "inspection_checklist": [
+      "Material certificate (MTC) matching EN8",
+      "First-article inspection before batch production",
+      "Hold dimensional tolerances to 0.020 mm on finished features",
+      "Final dimensional report with every dispatch"
+    ],
+    "responsibilities": [
+      {
+        "party": "Owner (fac_owner)",
+        "responsibility": "Provide material, gauges and acceptance criteria"
+      },
+      {
+        "party": "Partner (Sample Components (Oragadam))",
+        "responsibility": "Production, first-article inspection, dispatch"
+      },
+      {
+        "party": "Both",
+        "responsibility": "Selecting a partner sends a recovery request only. Activation is subject to human, customer and contractual approvals outside the software."
+      }
+    ],
+    "required_approvals": [
+      "Customer approval for alternate production source"
+    ],
+    "milestones": [
+      {
+        "step_key": "REQUEST_SENT",
+        "target_offset_hours": 0.0
+      },
+      {
+        "step_key": "PARTNER_RESPONSE",
+        "target_offset_hours": 4.0
+      },
+      {
+        "step_key": "TECHNICAL_AND_CUSTOMER_APPROVALS",
+        "target_offset_hours": 24.0
+      },
+      {
+        "step_key": "PRODUCTION_SCHEDULED",
+        "target_offset_hours": 48.0
+      },
+      {
+        "step_key": "PRODUCTION_STARTED",
+        "target_offset_hours": 72.0
+      },
+      {
+        "step_key": "QUALITY_INSPECTION",
+        "target_offset_hours": 96.0
+      },
+      {
+        "step_key": "DISPATCH_AND_DELIVERY",
+        "target_offset_hours": 120.0
+      }
+    ],
+    "text": "RECOVERY HANDOVER PACK - SIMULATED SAMPLE\n====================================\nPartner: Sample Components (Oragadam)\nJob: Recovery job rr_20261114230810_ord_102\n\nTHIS PACK IS SIMULATED SAMPLE. Activation is subject to human, customer and\ncontractual approvals outside the software.\n\nJob requirements\n----------------\n- Material: EN8\n- Quantity: 200\n- Deadline: 2026-11-19 23:08 UTC\n- Process route:\n  1. TURN (tolerance 0.020 mm)\n  2. MILL (tolerance 0.050 mm)\n\nAuthorised documents\n--------------------\n- Recovery request summary (this pack)\n\nInspection checklist\n--------------------\n- Material certificate (MTC) matching EN8\n- First-article inspection before batch production\n- Hold dimensional tolerances to 0.020 mm on finished features\n- Final dimensional report with every dispatch\n\nRequired approvals\n------------------\n- Customer approval for alternate production source\n\nResponsibilities\n----------------\n- Owner (fac_owner): Provide material, gauges and acceptance criteria\n- Partner (Sample Components (Oragadam)): Production, first-article inspection, dispatch\n- Both: Selecting a partner sends a recovery request only. Activation is subject to human, customer and contractual approvals outside the software.\n\nSimulated milestones (offsets from request, not commitments)\n------------------------------------------------------------\n- REQUEST_SENT: t+0 h\n- PARTNER_RESPONSE: t+4 h\n- TECHNICAL_AND_CUSTOMER_APPROVALS: t+24 h\n- PRODUCTION_SCHEDULED: t+48 h\n- PRODUCTION_STARTED: t+72 h\n- QUALITY_INSPECTION: t+96 h\n- DISPATCH_AND_DELIVERY: t+120 h\n\nSelecting a partner sends a recovery request only. Activation is subject to human, customer and contractual approvals outside the software."
+  },
+  "passport": {
+    "id": "pas_aafbfe74bddf",
+    "part_id": "prt_1983b91ea4",
+    "status": "CONFIRMED",
+    "data": {
+      "part_name": {
+        "value": "PUMP SHAFT",
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "drawing_no": {
+        "value": "DWG-PSH-014",
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "revision": {
+        "value": "B",
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "customer": {
+        "value": "ACME Pumps (SAMPLE)",
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "process_route": {
+        "value": [
+          {
+            "process": "TURN"
+          },
+          {
+            "process": "MILL"
+          }
+        ],
+        "confidence": "CONFIRMED",
+        "source": "user",
+        "candidates": null
+      },
+      "material": {
+        "value": {
+          "grade": "EN8",
+          "standard": null,
+          "form": null
+        },
+        "confidence": "CONFIRMED",
+        "source": "user",
+        "candidates": null
+      },
+      "dimensions": {
+        "value": [
+          {
+            "label": "SHAFT DIAMETER",
+            "nominal_mm": 20,
+            "tol_plus_mm": 0.02,
+            "tol_minus_mm": 0.0,
+            "critical": false
+          },
+          {
+            "label": "KEYWAY WIDTH",
+            "nominal_mm": 8,
+            "tol_plus_mm": 0.0,
+            "tol_minus_mm": 0.0,
+            "critical": false
+          },
+          {
+            "label": "KEYWAY DEPTH",
+            "nominal_mm": 4,
+            "tol_plus_mm": 0.0,
+            "tol_minus_mm": 0.0,
+            "critical": false
+          },
+          {
+            "label": "LENGTH",
+            "nominal_mm": 250,
+            "tol_plus_mm": 0.1,
+            "tol_minus_mm": 0.1,
+            "critical": false
+          }
+        ],
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "tightest_tolerance_mm": {
+        "value": 0.02,
+        "confidence": "CONFIRMED",
+        "source": "user",
+        "candidates": null
+      },
+      "general_tolerance_standard": {
+        "value": "ISO 2768-m",
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "surface_finish_ra_um": {
+        "value": 1.6,
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "heat_treatment": {
+        "value": null,
+        "confidence": "MISSING",
+        "source": null,
+        "candidates": []
+      },
+      "coating": {
+        "value": null,
+        "confidence": "MISSING",
+        "source": null,
+        "candidates": []
+      },
+      "tooling_hints": {
+        "value": [
+          "DEBURR ALL EDGES"
+        ],
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      },
+      "quantity": {
+        "value": 200,
+        "confidence": "CONFIRMED",
+        "source": "user",
+        "candidates": null
+      },
+      "deadline": {
+        "value": null,
+        "confidence": "MISSING",
+        "source": null,
+        "candidates": []
+      },
+      "inspection_notes": {
+        "value": null,
+        "confidence": "MISSING",
+        "source": null,
+        "candidates": []
+      },
+      "envelope_mm": {
+        "value": 250.0,
+        "confidence": "MEDIUM",
+        "source": "vision",
+        "candidates": []
+      }
+    },
+    "extraction_meta": {
+      "provider": "cache",
+      "source": "cache",
+      "latency_ms": 51,
+      "sha256": "2db008bb992963e293c93a1e5602906131aa50dafd94ba6705e3849c4c7dfb5b",
+      "degraded": false,
+      "warnings": []
+    },
+    "source_sha256": "2db008bb992963e293c93a1e5602906131aa50dafd94ba6705e3849c4c7dfb5b",
+    "created_at": "2026-11-14T23:08:10.775453Z",
+    "updated_at": "2026-11-14T23:08:10.792535Z"
+  },
+  "rfq": {
+    "rfq_ref": "RFQ-4D70B32E",
+    "passport_id": "pas_aafbfe74bddf",
+    "content": {
+      "process_route": [
+        {
+          "process": "TURN"
+        },
+        {
+          "process": "MILL"
+        }
+      ],
+      "material": {
+        "grade": "EN8",
+        "standard": null,
+        "form": null
+      },
+      "dimensions": [
+        {
+          "label": "SHAFT DIAMETER",
+          "nominal_mm": 20,
+          "tol_plus_mm": 0.02,
+          "tol_minus_mm": 0.0,
+          "critical": false
+        },
+        {
+          "label": "KEYWAY WIDTH",
+          "nominal_mm": 8,
+          "tol_plus_mm": 0.0,
+          "tol_minus_mm": 0.0,
+          "critical": false
+        },
+        {
+          "label": "KEYWAY DEPTH",
+          "nominal_mm": 4,
+          "tol_plus_mm": 0.0,
+          "tol_minus_mm": 0.0,
+          "critical": false
+        },
+        {
+          "label": "LENGTH",
+          "nominal_mm": 250,
+          "tol_plus_mm": 0.1,
+          "tol_minus_mm": 0.1,
+          "critical": false
+        }
+      ],
+      "tightest_tolerance_mm": 0.02,
+      "general_tolerance_standard": "ISO 2768-m",
+      "surface_finish_ra_um": 1.6,
+      "quantity": 200,
+      "envelope_mm": 250.0
+    },
+    "text": "RECOVERY RFQ - RFQ-4D70B32E\n===========================\nRedacted enquiry: customer-identifying details removed (see redaction report).\nA match is a candidate, not an approved backup.\n\nJob\n---\n- Quantity: 200\n- Deadline: not stated\n- Envelope: 250.0 mm\n\nMaterial\n--------\nEN8\n\nProcess route\n-------------\n- TURN\n- MILL\nTightest tolerance: 0.02 mm\nGeneral tolerances: ISO 2768-m\nSurface finish: Ra 1.6 um\n\nInspection requirements\n-----------------------\n- as per enquiry\n\nAll quantities and cycle times in this enquiry are estimates; production\ndetails are agreed after technical and commercial review.",
+    "redaction_report": {
+      "removed_keys": [
+        "coating (empty)",
+        "customer",
+        "deadline (empty)",
+        "drawing_no",
+        "heat_treatment (empty)",
+        "inspection_notes (empty)",
+        "part_name",
+        "revision",
+        "tooling_hints"
+      ],
+      "scrubbed_text_fields": [],
+      "kept_keys": [
+        "process_route",
+        "material",
+        "dimensions",
+        "tightest_tolerance_mm",
+        "general_tolerance_standard",
+        "surface_finish_ra_um",
+        "quantity",
+        "envelope_mm"
+      ]
+    },
+    "deadline_days_from_now": null
+  }
+}

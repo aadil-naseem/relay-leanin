@@ -1,0 +1,250 @@
+@import url('../components/primitives/primitives.css');
+@import url('../components/domain/domain.css');
+
+:root {
+  color: var(--text);
+  background: var(--bg);
+  font: 16px/1.45 var(--f-ui);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--c-cream-12) 1px, transparent 1px),
+    linear-gradient(90deg, var(--c-cream-12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--c-sky);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: var(--c-deep);
+  background: var(--c-sun);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.f0-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: var(--strip) 1fr auto;
+  color: var(--text);
+}
+
+.f0-status-strip {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: var(--strip);
+  padding: 0 24px;
+  border-bottom: 1px solid var(--hair);
+  background: var(--panel);
+}
+
+.f0-brand {
+  color: var(--c-white);
+  font-family: var(--f-display);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.f0-factory {
+  overflow: hidden;
+  color: var(--c-cream);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.f0-status-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.f0-stamp {
+  padding: 3px 6px;
+  border: 1px solid var(--c-gold);
+  color: var(--c-pale);
+  letter-spacing: 0.08em;
+}
+
+.f0-health {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--c-cream);
+}
+
+.f0-health-dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: var(--c-gold);
+}
+
+.f0-health[data-state="ok"] .f0-health-dot {
+  background: var(--c-sky);
+}
+
+.f0-health[data-state="error"] .f0-health-dot {
+  background: var(--c-sun);
+}
+
+.f0-content {
+  width: min(100% - 48px, 1600px);
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.f0-kicker,
+.f0-mono {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.f0-kicker {
+  color: var(--c-pale);
+  text-transform: uppercase;
+}
+
+.f0-content h1 {
+  margin: 12px 0 8px;
+  color: var(--c-white);
+  font-family: var(--f-display);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.f0-content p {
+  max-width: 640px;
+  margin: 0;
+  color: var(--c-cream);
+}
+
+.f0-panel {
+  position: relative;
+  max-width: 720px;
+  margin-top: 32px;
+  padding: 24px;
+  border: 1px solid var(--hair);
+  background: var(--panel);
+}
+
+.f0-panel::before,
+.f0-panel::after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--c-gold);
+  border-style: solid;
+  content: "";
+}
+
+.f0-panel::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+
+.f0-panel::after {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+.f0-title-block {
+  position: fixed;
+  right: 16px;
+  bottom: 12px;
+  z-index: 3;
+  padding: 6px 9px;
+  border: 1px solid var(--hair);
+  background: var(--c-deep-80);
+  color: var(--c-cream);
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.f0-error {
+  color: var(--c-pale);
+}
+
+@media (max-width: 760px) {
+  .f0-status-strip {
+    padding: 0 12px;
+  }
+
+  .f0-factory {
+    display: none;
+  }
+
+  .f0-content {
+    width: min(100% - 24px, 1600px);
+    padding-top: 32px;
+  }
+
+  .f0-status-meta {
+    gap: 10px;
+    font-size: 11px;
+  }
+
+  .f0-title-block {
+    right: 8px;
+    bottom: 8px;
+  }
+}

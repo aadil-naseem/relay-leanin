@@ -1,0 +1,26 @@
+.system-page { display: grid; min-height: min(72vh, 760px); align-content: center; justify-items: center; gap: 13px; padding: 34px 22px 70px; text-align: center; }
+.system-page h1 { margin: 0; color: var(--c-white); font: 900 clamp(42px, 7vw, 76px)/0.9 var(--f-display); text-transform: uppercase; }
+.system-page > p { max-width: 520px; margin: 0; color: var(--c-pale); font-size: 13px; }
+.system-contact-glyph { display: grid; width: min(260px, 70vw); place-items: center; margin-bottom: 3px; }
+.system-contact-glyph svg { width: 100%; overflow: visible; }
+.system-contact-glyph path { fill: none; stroke: var(--c-sun); stroke-width: 4; stroke-linecap: square; stroke-linejoin: miter; }
+.system-contact-glyph circle { fill: var(--c-deep); stroke: var(--c-sun); stroke-width: 4; }
+.system-contact-glyph__spark { stroke: var(--c-pale) !important; stroke-width: 2 !important; }
+.system-not-found .relay-button { margin-top: 5px; }
+
+.system-offline { min-height: 100vh; padding-top: 70px; }
+.system-offline__layout { display: grid; max-width: 600px; justify-items: center; gap: 13px; padding: 28px; border: 1px solid var(--c-gold); background: var(--panel); }
+.system-contact-glyph--offline { width: min(190px, 60vw); margin-bottom: 0; }
+.system-contact-glyph--offline path { stroke: var(--c-pale); }
+.system-contact-glyph--offline circle { stroke: var(--c-pale); }
+.system-offline__message { max-width: 470px; margin: 0; color: var(--c-cream); font-size: 12px; line-height: 1.5; }
+.system-offline__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-top: 5px; }
+.system-offline__snapshot { max-width: 480px; margin: 2px 0 0; color: var(--c-pale); font-size: 11px; line-height: 1.45; }
+
+@media (max-width: 760px) {
+  .system-page { min-height: calc(100vh - var(--strip) - 58px); padding: 25px 14px 85px; }
+  .system-offline { min-height: 100vh; padding-bottom: 30px; }
+  .system-offline__layout { padding: 20px 14px; }
+  .system-offline__actions { width: 100%; flex-direction: column; }
+  .system-offline__actions .relay-button { width: 100%; }
+}

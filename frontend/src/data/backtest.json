@@ -1,0 +1,99 @@
+{
+  "event": "Cyclone Michaung",
+  "region": "Chennai region",
+  "event_period": "December 2023",
+  "weather_mode": "replay",
+  "generated_at_utc": "2026-11-14T13:14:56+00:00",
+  "source_report": "docs/BACKTEST_EXPOSURE.md",
+  "separation_points": 22,
+  "sites": [
+    {
+      "site": "Thirumudivakkam",
+      "label": "FLOODED",
+      "risk": 78,
+      "hazard": 0.97,
+      "rain_24h_mm": 190.7,
+      "vulnerability": 0.74,
+      "depression": 0.25,
+      "water": 1.0,
+      "in_zone": true
+    },
+    {
+      "site": "Ambattur north phase",
+      "label": "FLOODED",
+      "risk": 73,
+      "hazard": 1.0,
+      "rain_24h_mm": 242.3,
+      "vulnerability": 0.64,
+      "depression": 0.0,
+      "water": 0.95,
+      "in_zone": true
+    },
+    {
+      "site": "Villivakkam",
+      "label": "FLOODED",
+      "risk": 70,
+      "hazard": 1.0,
+      "rain_24h_mm": 259.4,
+      "vulnerability": 0.6,
+      "depression": 0.0,
+      "water": 0.78,
+      "in_zone": true
+    },
+    {
+      "site": "Perungudi",
+      "label": "FLOODED",
+      "risk": 70,
+      "hazard": 0.97,
+      "rain_24h_mm": 193.4,
+      "vulnerability": 0.62,
+      "depression": 0.0,
+      "water": 0.87,
+      "in_zone": true
+    },
+    {
+      "site": "Oragadam",
+      "label": "NOT FLOODED",
+      "risk": 48,
+      "hazard": 0.95,
+      "rain_24h_mm": 180.7,
+      "vulnerability": 0.35,
+      "depression": 0.6,
+      "water": 0.54,
+      "in_zone": false
+    },
+    {
+      "site": "Irungattukottai",
+      "label": "NOT FLOODED",
+      "risk": 29,
+      "hazard": 0.95,
+      "rain_24h_mm": 180.7,
+      "vulnerability": 0.08,
+      "depression": 0.0,
+      "water": 0.31,
+      "in_zone": false
+    },
+    {
+      "site": "Pillaipakkam",
+      "label": "NOT FLOODED",
+      "risk": 28,
+      "hazard": 0.92,
+      "rain_24h_mm": 168.2,
+      "vulnerability": 0.07,
+      "depression": 0.2,
+      "water": 0.0,
+      "in_zone": false
+    }
+  ],
+  "truth_sources": [
+    "KNN India and The Hindu: Ambattur north phase",
+    "The Week and The Hindu BusinessLine: Thirumudivakkam and Perungudi",
+    "Deccan Herald: Villivakkam and SIPCOT-area reporting"
+  ],
+  "data_sources": [
+    "Open-Meteo historical hourly precipitation",
+    "Open-Meteo elevation",
+    "OpenStreetMap water-distance measurements",
+    "Curated planning zones from public reporting (not official flood maps)"
+  ]
+}
